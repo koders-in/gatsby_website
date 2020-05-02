@@ -9,7 +9,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 
-import { ImageContainer, ImageStyle, Container, MainContainer, MiddleText, BackgroundImageStyle } from './dashboard.style';
+import { HeaderContainer, Container, HeaderContainerText, AboutUsContainer } from './dashboard.style';
 import { ServiceContainer, ServiceContainerItems, ServiceItems } from './service.style';
 
 import background from '../../images/background.jpg';
@@ -21,7 +21,7 @@ const DashboardPage = ( { children } ) => {
   return (
     <>
       <header>
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#333333' } }>
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707' } }>
           <div className="mx-auto order-0">
             <a className="navbar-brand mx-auto text-white" href="#">logo</a>
           </div>
@@ -40,34 +40,14 @@ const DashboardPage = ( { children } ) => {
           </div>
         </nav>
       </header>
-      <MainContainer>
-        <Container style={ { position: 'fixed' } }>
-          <MiddleText className="row align-items-center justify-content-center h-100">
-            <div className="col-md-7 text-center">
-              <h1 className="mb-4 text-white">Mighty Web Design Agency</h1>
-              <p className="mb-4 text-white" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
-            </div>
-          </MiddleText>
-
-
-          <ImageContainer>
-            <ImageStyle
-              src={ background }
-              alt='background-img'
-            />
-          </ImageContainer>
-
-
-        </Container>
-
-        <Container primary style={ { marginTop: '100%' } }>
-          <div style={ { width: '100%', height: '200px' } }>
-
-          </div>
-
-
-        </Container>
-        <Container primary style={ { backgroundColor: 'rgb(51, 51, 51)', color: 'white' } }>
+      <HeaderContainer>
+        <HeaderContainerText>
+          <h1 className="mb-4 text-white">Mighty Web Design Agency</h1>
+          <p className="mb-4 text-white" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+        </HeaderContainerText>
+      </HeaderContainer>
+      <main id="main">
+        <Container primary style={ { backgroundColor: '#070707', color: 'white' } }>
           <h1>Our Services</h1>
           <ServiceContainer>
 
@@ -103,24 +83,31 @@ const DashboardPage = ( { children } ) => {
 
         </Container>
 
-        <Container primary style={ { position: 'fixed' } }>
-          <div style={ {  } }>
-              {/* <BackgroundImageStyle
-                src={ background }
-                alt='background-img'
-              /> */}
-          </div>
-
-
+        <Container primary secondary  >
+          <AboutUsContainer>
+            <div class="text-center text-white p-5">
+              <h3>Call To Action</h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </AboutUsContainer>
         </Container>
-        <Container primary style={ {marginTop: '200px', backgroundColor: 'rgb(51, 51, 51)' } }>
+        <Container primary style={ { backgroundColor: '#070707' } }>
+          {/* 'rgb(51, 51, 51) */ }
           <div style={ { width: '100%', height: '200px' } }>
 
           </div>
 
 
         </Container>
-      </MainContainer>
+        <Container primary style={ { marginTop: '0', backgroundColor: 'white' } }>
+          <div style={ { width: '100%', height: '200px' } }>
+
+          </div>
+
+
+        </Container>
+
+      </main>
     </>
   );
 };

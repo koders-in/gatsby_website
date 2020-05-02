@@ -1,39 +1,37 @@
 
 import styled, { keyframes } from "styled-components";
+import background1 from '../../images/background1.jpg';
 import background from '../../images/background.jpg';
-
-export const breatheAnimation = keyframes`
- 0% { height: 100px; width: 100px; }
- 30% { height: 400px; width: 400px; opacity: 1 }
- 40% { height: 405px; width: 405px; opacity: 0.3; }
- 100% { height: 100px; width: 100px; opacity: 0.6; }
-`;
-export const MiddleText = styled.div`
-animation-name: ${breatheAnimation };
-`;
-
-export const MainContainer = styled.div`
-    position:absolute;
-    height:auto;
-    width:100%;
-    margin: 0;
-    padding: 0;
-`;
-export const ImageContainer = styled.div`
-  position: absolute;
-  top: 0px;
-  left: 0px;
+import background2 from '../../images/background2.jpg';
+export const HeaderContainer = styled.section`
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: -100;
+  height: 100vh;
+  background: url(${ background2 }) top center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
 `;
+
+export const HeaderContainerText = styled.div`
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+  background: rgba(0,0,0,0.7);
+
+`;
+
 
 export const Container = styled.section`
   overflow: hidden;
   z-index: 0;
-  background-image: none;
   position: relative;
   height: ${props => props.primary ? 'auto' : '100%' };
   width: 100%;
@@ -47,10 +45,18 @@ export const Container = styled.section`
   background-color: #fff;
   overflow-x: hidden;
   text-align: center;
-  padding: ${props => props.primary ? '2rem' : 'none' };
+  padding: ${props => props.primary && !props.secondary ? '2rem' : 'none' };
+  background:
+  url(${props => props.secondary && background1 }) center center;
+  background-attachment:${props => props.secondary && 'fixed' } ;
 
   `;
 
+export const AboutUsContainer = styled.div`
+  height: 250px;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+`;
 export const ImageStyle = styled.img`
     background-position: 50% 50%;
     background-size: cover;
@@ -68,8 +74,10 @@ export const ImageStyle = styled.img`
 
 
 export const BackgroundImageStyle = styled.div`
-width: 100%;
-height: 200px;
-background-image: url(${background });
-
+  width: 100%;
+  height: 200px;
+  background-image: url(${background1 });
+  margin:0;
+  padding:0;
+  z-index: -10;
 `;
