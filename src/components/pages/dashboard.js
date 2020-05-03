@@ -7,72 +7,107 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
 
-import { ImageContainer, ImageStyle, Container } from './dashboard.style';
+
+import { HeaderContainer, Container, HeaderContainerText, AboutUsContainer } from './dashboard.style';
+import { ServiceContainer, ServiceContainerItems, ServiceItems } from './service.style';
+
 import background from '../../images/background.jpg';
+import background1 from '../../images/background1.jpg';
 
 
 const DashboardPage = ( { children } ) => {
-  const data = useStaticQuery( graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-  console.log( background );
 
   return (
     <>
-      <Container className="mbr-fullscreen mbr-parallax-background" >
-        {/* //navbar navbar-dark bg-dark */ }
-        <nav class="navbar navbar-expand-md p-4">
-          <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="#">logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+      <header>
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707' } }>
+          <div className="mx-auto order-0">
+            <a className="navbar-brand mx-auto text-white" href="#">logo</a>
           </div>
-          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+          <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+              <li className="nav-item">
+                <a className="nav-link text-white" href="#">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+              <li className="nav-item">
+                <a className="nav-link text-white" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </nav>
+      </header>
+      <HeaderContainer>
+        <HeaderContainerText>
+          <h1 className="mb-4 text-white">Mighty Web Design Agency</h1>
+          <p className="mb-4 text-white" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+        </HeaderContainerText>
+      </HeaderContainer>
+      <main id="main">
+        <Container primary style={ { backgroundColor: '#070707', color: 'white' } }>
+          <h1>Our Services</h1>
+          <ServiceContainer>
 
-        <div class="row align-items-center justify-content-center h-75">
-          <div class="col-md-7 text-center">
-            <h1 class="mb-4 text-white">Mighty Web Design Agency</h1>
-            <p class="mb-4 text-white" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+            <ServiceContainerItems>
+              <ServiceItems>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+              </ServiceItems>
+            </ServiceContainerItems>
+
+            <ServiceContainerItems>
+              <ServiceItems>
+                <h4>Graphic Design</h4>
+                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+              </ServiceItems>
+            </ServiceContainerItems>
+
+            <ServiceContainerItems>
+              <ServiceItems>
+                <h4>App Design</h4>
+                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+              </ServiceItems>
+            </ServiceContainerItems>
+
+            <ServiceContainerItems>
+              <ServiceItems>
+                <h4>Ecommerce</h4>
+                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+              </ServiceItems>
+            </ServiceContainerItems>
+          </ServiceContainer>
+
+
+        </Container>
+
+        <Container primary secondary  >
+          <AboutUsContainer>
+            <div class="text-center text-white p-5">
+              <h3>Call To Action</h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </AboutUsContainer>
+        </Container>
+        <Container primary style={ { backgroundColor: '#070707' } }>
+          {/* 'rgb(51, 51, 51) */ }
+          <div style={ { width: '100%', height: '200px' } }>
+
           </div>
-        </div>
 
 
-        <ImageContainer>
-          <ImageStyle
-            src={ background }
-            alt='background-img'
-          />
+        </Container>
+        <Container primary style={ { marginTop: '0', backgroundColor: 'white' } }>
+          <div style={ { width: '100%', height: '200px' } }>
 
-        </ImageContainer>
+          </div>
 
 
-      </Container>
-      <Container>
+        </Container>
 
-
-      </Container>
+      </main>
     </>
   );
 };
