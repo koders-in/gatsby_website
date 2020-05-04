@@ -15,18 +15,27 @@ padding: 0 5rem;
 
 export const ServiceContainerItems = styled( FlexItem ).attrs( () => ( {
 } ) )`
-width: 23%;
+width: 33%;
 height: 240px;
-color: black;
-background-color: white;
-
+color: #FCF8FF;
+display: flex;
+flex-direction: row;
 
 &:hover {
-  background-color: #F6F5F5;
  }
 `;
 
 export const ServiceItems = styled.div`
-padding: 20px;
-margin-top: 20%;
+  text-align: left;
+  padding: 1rem
+`;
+
+export const RoundIconConatiner = styled.div`
+  border: 1px solid white;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 2.7;
+  text-align: center;
+
 `;

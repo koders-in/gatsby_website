@@ -1,19 +1,13 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react";
 import PropTypes from "prop-types";
 
+import { LaptopMacIcon, DomainIcon, PagesIcon } from '../constants/styledIcons';
 
 import { HeaderContainer, Container, HeaderContainerText, AboutUsContainer } from './dashboard.style';
-import { ServiceContainer, ServiceContainerItems, ServiceItems } from './service.style';
+import { ServiceContainer, ServiceContainerItems, ServiceItems, RoundIconConatiner } from './service.style';
 
-import background from '../../images/background.jpg';
-import background1 from '../../images/background1.jpg';
+
+import WorkDefaultContainer from './workContainer';
 
 
 const DashboardPage = ( { children } ) => {
@@ -41,46 +35,54 @@ const DashboardPage = ( { children } ) => {
         </nav>
       </header>
       <HeaderContainer>
-        <HeaderContainerText>
+        <HeaderContainerText data-sal="slide-up" data-sal-delay="500" data-sal-easing="linear">
           <h1 className="mb-4 text-white">Mighty Web Design Agency</h1>
           <p className="mb-4 text-white" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
         </HeaderContainerText>
       </HeaderContainer>
       <main id="main">
-        <Container primary style={ { backgroundColor: '#070707', color: 'white' } }>
+
+        <Container primary style={ { backgroundColor: '#1A1A1A', color: 'white' } }>
+
           <h1>Our Services</h1>
           <ServiceContainer>
-
             <ServiceContainerItems>
+              <ServiceItems >
+                <RoundIconConatiner>
+                  <LaptopMacIcon />
+                </RoundIconConatiner>
+              </ServiceItems>
               <ServiceItems>
                 <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+                <p style={ { color: 'grey' } }>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
               </ServiceItems>
             </ServiceContainerItems>
 
             <ServiceContainerItems>
+              <ServiceItems>
+                <RoundIconConatiner>
+                  <DomainIcon />
+                </RoundIconConatiner>
+              </ServiceItems>
               <ServiceItems>
                 <h4>Graphic Design</h4>
-                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+                <p style={ { color: 'grey' } }>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
               </ServiceItems>
             </ServiceContainerItems>
 
             <ServiceContainerItems>
+              <ServiceItems>
+                <RoundIconConatiner>
+                  <PagesIcon />
+                </RoundIconConatiner>
+              </ServiceItems>
               <ServiceItems>
                 <h4>App Design</h4>
-                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+                <p style={ { color: 'grey' } }>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
               </ServiceItems>
             </ServiceContainerItems>
 
-            <ServiceContainerItems>
-              <ServiceItems>
-                <h4>Ecommerce</h4>
-                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
-              </ServiceItems>
-            </ServiceContainerItems>
           </ServiceContainer>
-
-
         </Container>
 
         <Container primary secondary  >
@@ -91,17 +93,26 @@ const DashboardPage = ( { children } ) => {
             </div>
           </AboutUsContainer>
         </Container>
-        <Container primary style={ { backgroundColor: '#070707' } }>
-          {/* 'rgb(51, 51, 51) */ }
+        <WorkDefaultContainer />
+        <Container primary style={ { marginTop: '0', backgroundColor: '#1A1A1A' } }>
           <div style={ { width: '100%', height: '200px' } }>
+            <h1 className="mb-4 text-white"> Our Team</h1>
 
           </div>
 
 
         </Container>
-        <Container primary style={ { marginTop: '0', backgroundColor: 'white' } }>
+        <Container primary style={ { marginTop: '0', backgroundColor: '#070707' } }>
           <div style={ { width: '100%', height: '200px' } }>
+            <h1 className="mb-4 text-white">Contact Us</h1>
 
+          </div>
+
+
+        </Container>
+        <Container primary style={ { marginTop: '0', backgroundColor: '#1A1A1A' } }>
+          <div style={ { width: '100%', height: '200px' } }>
+            footer
           </div>
 
 
