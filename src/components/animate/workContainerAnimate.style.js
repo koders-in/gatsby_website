@@ -1,17 +1,15 @@
 export const workCards = [
   {
-    selector: '.sr-item',
-    options: {
-      reset: true,
-    },
-  },
-  {
     selector: '.sr-item--sequence',
     options: {
-      delay: 500,
+      delay: 400,
       duration: 500,
       reset: true,
-      easing: 'ease-in'
+      easing: 'linear',
+      origin: 'bottom',
+      scale: 1,
     },
+
+    interval: 500,
   }
 ];

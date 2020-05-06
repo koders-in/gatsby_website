@@ -4,7 +4,11 @@ import PropTypes from "prop-types";
 import { LaptopMacIcon, DomainIcon, PagesIcon } from '../constants/styledIcons';
 
 import { HeaderContainer, Container, HeaderContainerText, AboutUsContainer } from './dashboard.style';
-import { ServiceContainer, ServiceContainerItems, ServiceItems, RoundIconConatiner } from './service.style';
+import { ServiceContainer, ServiceContainerItems, ServiceItems, RoundIconConatiner, ServiceTextStyle } from './service.style';
+
+import { AboutContainerCard, AboutContainerItems, AboutTextContainer } from './about.style';
+
+import FooterContainer from '../organism/footer.js';
 
 
 import WorkDefaultContainer from './workContainer';
@@ -15,7 +19,7 @@ const DashboardPage = ( { children } ) => {
   return (
     <>
       <header>
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707' } }>
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707', padding: '1rem' } }>
           <div className="mx-auto order-0">
             <a className="navbar-brand mx-auto text-white" href="#">logo</a>
           </div>
@@ -43,8 +47,12 @@ const DashboardPage = ( { children } ) => {
       <main id="main">
 
         <Container primary style={ { backgroundColor: '#1A1A1A', color: 'white' } }>
-
-          <h1>Our Services</h1>
+          <ServiceTextStyle>
+            <div style={ { width: '40%' } }>
+              <h1 style={ { marginBottom: '1.5rem' } }>Web <span style={ { color: '#E43C5C' } }>&</span> Mobile app design, bring your ideas to life</h1>
+              <p style={ { color: '#DCDCDC' } }>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+            </div>
+          </ServiceTextStyle>
           <ServiceContainer>
             <ServiceContainerItems>
               <ServiceItems >
@@ -53,7 +61,7 @@ const DashboardPage = ( { children } ) => {
                 </RoundIconConatiner>
               </ServiceItems>
               <ServiceItems>
-                <h4>Web Design</h4>
+                <h4>Strategy</h4>
                 <p style={ { color: 'grey' } }>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
               </ServiceItems>
             </ServiceContainerItems>
@@ -65,7 +73,7 @@ const DashboardPage = ( { children } ) => {
                 </RoundIconConatiner>
               </ServiceItems>
               <ServiceItems>
-                <h4>Graphic Design</h4>
+                <h4>Design</h4>
                 <p style={ { color: 'grey' } }>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
               </ServiceItems>
             </ServiceContainerItems>
@@ -77,7 +85,7 @@ const DashboardPage = ( { children } ) => {
                 </RoundIconConatiner>
               </ServiceItems>
               <ServiceItems>
-                <h4>App Design</h4>
+                <h4>Development</h4>
                 <p style={ { color: 'grey' } }>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
               </ServiceItems>
             </ServiceContainerItems>
@@ -85,15 +93,37 @@ const DashboardPage = ( { children } ) => {
           </ServiceContainer>
         </Container>
 
-        <Container primary secondary  >
+        <WorkDefaultContainer />
+
+
+
+        <Container primary secondary >
           <AboutUsContainer>
-            <div class="text-center text-white p-5">
-              <h3>Call To Action</h3>
-              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+            <ServiceTextStyle>
+              <div style={ { width: '40%' } }>
+                <h1 style={ { marginBottom: '1.5rem', color: 'white' } }>Our achievements</h1>
+                <p style={ { color: '#DCDCDC' } }>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+              </div>
+            </ServiceTextStyle>
+            <AboutContainerCard>
+              <AboutContainerItems>
+                <strong style={ { fontSize: '35px', color: '#E43C5C' } }>400</strong>
+                <span>Customers are satisfied with our professional support</span>
+              </AboutContainerItems>
+              <AboutContainerItems >
+                <strong style={ { fontSize: '35px', color: '#E43C5C' } }>1000</strong>
+                <span>Amazing preset options to be mixed and combined</span>
+              </AboutContainerItems>
+              <AboutContainerItems >
+                <strong style={ { fontSize: '35px', color: '#E43C5C' } }>8000</strong>
+                <span>Average response time on live chat support channel</span>
+              </AboutContainerItems>
+
+            </AboutContainerCard>
           </AboutUsContainer>
         </Container>
-        <WorkDefaultContainer />
+
+
         <Container primary style={ { marginTop: '0', backgroundColor: '#1A1A1A' } }>
           <div style={ { width: '100%', height: '200px' } }>
             <h1 className="mb-4 text-white"> Our Team</h1>
@@ -104,21 +134,15 @@ const DashboardPage = ( { children } ) => {
         </Container>
         <Container primary style={ { marginTop: '0', backgroundColor: '#070707' } }>
           <div style={ { width: '100%', height: '200px' } }>
-            <h1 className="mb-4 text-white">Contact Us</h1>
+            <h1 className="mb-4 text-white">Our satisfied customer says</h1>
 
-          </div>
-
-
-        </Container>
-        <Container primary style={ { marginTop: '0', backgroundColor: '#1A1A1A' } }>
-          <div style={ { width: '100%', height: '200px' } }>
-            footer
           </div>
 
 
         </Container>
 
       </main>
+      <FooterContainer />
     </>
   );
 };

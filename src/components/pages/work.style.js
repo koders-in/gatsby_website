@@ -1,5 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Flex, { FlexItem } from 'styled-flex-component';
+
+
+const rotate = keyframes``;
+// `
+//   from {
+//     transform: translateZ(0px) translateY(0%);
+//   }
+
+//   to {
+//     transform: translateZ(0px) translateY(-2.22222%);
+//   }
+// `;
 
 export const WorkContainer = styled( Flex ).attrs( () => ( {
   alignCenter: true,
@@ -7,7 +19,7 @@ export const WorkContainer = styled( Flex ).attrs( () => ( {
   row: true,
   justifyBetween: true,
 } ) )`
-
+animation: ${rotate } 2s linear infinite;
 width: 100%;
 height: auto;
 `;

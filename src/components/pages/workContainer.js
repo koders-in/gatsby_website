@@ -14,6 +14,8 @@ class WorkDefaultContainer extends React.Component {
 
   render () {
     const { animationContainerReference } = this.props;
+
+    console.log( "---", window.screen.availHeight );
     return (
       <>
         <Container ref={ animationContainerReference } primary style={ { backgroundColor: '#070707' } }>
@@ -29,14 +31,14 @@ class WorkDefaultContainer extends React.Component {
             <WorkContainerItems style={ { width: "50%", flex: '0 0 50%', height: '500px' } } primary>
               <WorkContainerInnerItems>
 
-                <WorkContainerCards primary className="sr-item--sequence"/>
-                <WorkContainerCards primary secondary className="sr-item--sequence"/>
+                <WorkContainerCards primary className="sr-item--sequence" />
+                <WorkContainerCards primary secondary className="sr-item--sequence" />
 
               </WorkContainerInnerItems>
               <WorkContainerInnerItems>
-                <WorkContainerCards primary primary className="sr-item--sequence"/>
+                <WorkContainerCards primary primary className="sr-item--sequence" />
 
-                <WorkContainerCards primary secondary primary className="sr-item--sequence"/>
+                <WorkContainerCards primary secondary primary className="sr-item--sequence" />
 
               </WorkContainerInnerItems>
 
@@ -44,7 +46,7 @@ class WorkDefaultContainer extends React.Component {
 
             <WorkContainerItems style={ { width: "25%", flex: '0 0 25%' } }>
 
-              <WorkContainerCards primary className="sr-item--sequence"/>
+              <WorkContainerCards primary className="sr-item--sequence" />
 
             </WorkContainerItems>
 
