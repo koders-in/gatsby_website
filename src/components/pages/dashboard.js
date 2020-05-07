@@ -8,6 +8,8 @@ import { ServiceContainer, ServiceContainerItems, ServiceItems, RoundIconConatin
 
 import { AboutContainerCard, AboutContainerItems, AboutTextContainer } from './about.style';
 
+import { CustomerContainer, ImageContainer, ReviewContainer } from './customer.style.js';
+
 import FooterContainer from '../organism/footer.js';
 
 
@@ -125,16 +127,37 @@ const DashboardPage = ( { children } ) => {
 
 
         <Container primary style={ { marginTop: '0', backgroundColor: '#1A1A1A' } }>
+          <ServiceTextStyle className='mb-5'>
+            <div style={ { width: '40%'  } }>
+              <h1 style={ { marginBottom: '1.5rem', color: 'white' } }>Our satisfied customer says</h1>
+              <p style={ { color: '#DCDCDC' } }>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+            </div>
+          </ServiceTextStyle>
+          <CustomerContainer>
+            <ImageContainer></ImageContainer>
+            <ReviewContainer>
+              <p style={ { color: 'grey' } } >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+            </ReviewContainer>
+          </CustomerContainer>
+          <CustomerContainer>
+            <ReviewContainer primary>
+              <p  style={ { color: 'grey' } } >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+            </ReviewContainer>
+            <ImageContainer></ImageContainer>
+          </CustomerContainer>
+          <CustomerContainer>
+            <ImageContainer></ImageContainer>
+            <ReviewContainer>
+              <p style={ { color: 'grey' } } >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+            </ReviewContainer>
+          </CustomerContainer>
+        </Container>
+
+
+        <Container primary style={ { marginTop: '0', backgroundColor: '#070707' } }>
           <div style={ { width: '100%', height: '200px' } }>
             <h1 className="mb-4 text-white"> Our Team</h1>
 
-          </div>
-
-
-        </Container>
-        <Container primary style={ { marginTop: '0', backgroundColor: '#070707' } }>
-          <div style={ { width: '100%', height: '200px' } }>
-            <h1 className="mb-4 text-white">Our satisfied customer says</h1>
 
           </div>
 

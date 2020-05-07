@@ -8,6 +8,7 @@ import { WorkContainer, WorkContainerItems, WorkContainerCards, WorkContainerInn
 import withScrollReveal from 'react-scrollreveal';
 
 import { workCards } from '../animate/workContainerAnimate.style';
+import { ServiceTextStyle } from './service.style';
 
 class WorkDefaultContainer extends React.Component {
 
@@ -15,12 +16,15 @@ class WorkDefaultContainer extends React.Component {
   render () {
     const { animationContainerReference } = this.props;
 
-    console.log( "---", window.screen.availHeight );
     return (
       <>
         <Container ref={ animationContainerReference } primary style={ { backgroundColor: '#070707' } }>
-          <h1 className="mb-4 text-white">Our Work</h1>
-
+          <ServiceTextStyle className='mb-5'>
+            <div style={ { width: '40%' } }>
+              <h1 style={ { marginBottom: '1.5rem', color: 'white' } }>Our Work</h1>
+              <p style={ { color: '#DCDCDC' } }>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+            </div>
+          </ServiceTextStyle>
           <WorkContainer>
             <WorkContainerItems style={ { width: "25%", flex: '0 0 25%' } }>
 
