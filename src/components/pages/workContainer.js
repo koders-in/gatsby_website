@@ -5,9 +5,8 @@ import { Container } from './dashboard.style';
 
 import { WorkContainer, WorkContainerItems, WorkContainerCards, WorkContainerInnerItems } from './work.style';
 
-import withScrollReveal from 'react-scrollreveal';
+// import withScrollReveal from 'react-scrollreveal';
 
-import { workCards } from '../animate/workContainerAnimate.style';
 import { ServiceTextStyle } from './service.style';
 
 class WorkDefaultContainer extends React.Component {
@@ -66,4 +65,4 @@ WorkDefaultContainer.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default withScrollReveal( workCards )( WorkDefaultContainer );
+export default WorkDefaultContainer
