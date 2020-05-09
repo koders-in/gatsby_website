@@ -8,6 +8,7 @@ export const workCards = [
       easing: 'linear',
       origin: 'bottom',
       scale: 1,
+      distance: '100px',
     },
 
     interval: 500,
