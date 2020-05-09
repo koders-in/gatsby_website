@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Flex, { FlexItem } from 'styled-flex-component';
 
-export const ServiceContainer = styled( Flex ).attrs( () => ( {
+export const AboutContainerCard = styled( Flex ).attrs( () => ( {
   alignCenter: true,
   full: true,
   row: true,
@@ -12,19 +12,21 @@ height: auto;
 padding: 2rem 5rem;
 `;
 
-export const ServiceContainerItems = styled( FlexItem ).attrs( () => ( {
+export const AboutContainerItems = styled( FlexItem ).attrs( () => ( {
 } ) )`
+
   width: 33%;
-  height: 200px;
-  color: #FCF8FF;
+  color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  font-size: 20px;
+
 
 &:hover {
  }
 `;
 
-export const ServiceItems = styled.div`
+export const AboutItems = styled.div`
   text-align: left;
   padding: 1rem
 `;
@@ -39,12 +41,6 @@ export const RoundIconConatiner = styled.div`
 
 `;
 
-export const ServiceTextStyle = styled( Flex ).attrs( () => ( {
-} ) )`
-margin-top: 3rem;
-justify-content: center !important;
-display: flex;
--ms-flex-wrap: wrap;
-flex-wrap: wrap;
-line-height: 2;
+export const AboutTextContainer = styled.div`
+
 `;

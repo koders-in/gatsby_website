@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import background1 from '../../images/background1.jpg';
 import background from '../../images/background.jpg';
 import background2 from '../../images/background2.jpg';
+
 export const HeaderContainer = styled.section`
   width: 100%;
   height: 100vh;
@@ -53,7 +54,7 @@ export const Container = styled.section`
   `;
 
 export const AboutUsContainer = styled.div`
-  height: 250px;
+  padding: 2rem;
   width: 100%;
   background: rgba(0,0,0,0.7);
 `;

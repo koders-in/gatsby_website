@@ -1,19 +1,19 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react";
 import PropTypes from "prop-types";
 
+import { LaptopMacIcon, DomainIcon, PagesIcon } from '../constants/styledIcons';
 
 import { HeaderContainer, Container, HeaderContainerText, AboutUsContainer } from './dashboard.style';
-import { ServiceContainer, ServiceContainerItems, ServiceItems } from './service.style';
+import { ServiceContainer, ServiceContainerItems, ServiceItems, RoundIconConatiner, ServiceTextStyle } from './service.style';
 
-import background from '../../images/background.jpg';
-import background1 from '../../images/background1.jpg';
+import { AboutContainerCard, AboutContainerItems, AboutTextContainer } from './about.style';
+
+import { CustomerContainer, ImageContainer, ReviewContainer } from './customer.style.js';
+
+import FooterContainer from '../organism/footer.js';
+
+
+import WorkDefaultContainer from './workContainer';
 
 
 const DashboardPage = ( { children } ) => {
@@ -21,7 +21,7 @@ const DashboardPage = ( { children } ) => {
   return (
     <>
       <header>
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707' } }>
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707', padding: '1rem' } }>
           <div className="mx-auto order-0">
             <a className="navbar-brand mx-auto text-white" href="#">logo</a>
           </div>
@@ -41,66 +41,123 @@ const DashboardPage = ( { children } ) => {
         </nav>
       </header>
       <HeaderContainer>
-        <HeaderContainerText>
+        <HeaderContainerText data-sal="slide-up" data-sal-delay="500" data-sal-easing="linear">
           <h1 className="mb-4 text-white">Mighty Web Design Agency</h1>
           <p className="mb-4 text-white" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
         </HeaderContainerText>
       </HeaderContainer>
       <main id="main">
-        <Container primary style={ { backgroundColor: '#070707', color: 'white' } }>
-          <h1>Our Services</h1>
+
+        <Container primary style={ { backgroundColor: '#1A1A1A', color: 'white' } }>
+          <ServiceTextStyle>
+            <div style={ { width: '40%' } }>
+              <h1 style={ { marginBottom: '1.5rem' } }>Web <span style={ { color: '#E43C5C' } }>&</span> Mobile app design, bring your ideas to life</h1>
+              <p style={ { color: '#DCDCDC' } }>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+            </div>
+          </ServiceTextStyle>
           <ServiceContainer>
-
             <ServiceContainerItems>
+              <ServiceItems >
+                <RoundIconConatiner>
+                  <LaptopMacIcon />
+                </RoundIconConatiner>
+              </ServiceItems>
               <ServiceItems>
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+                <h4>Strategy</h4>
+                <p style={ { color: 'grey' } }>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
               </ServiceItems>
             </ServiceContainerItems>
 
             <ServiceContainerItems>
               <ServiceItems>
-                <h4>Graphic Design</h4>
-                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+                <RoundIconConatiner>
+                  <DomainIcon />
+                </RoundIconConatiner>
+              </ServiceItems>
+              <ServiceItems>
+                <h4>Design</h4>
+                <p style={ { color: 'grey' } }>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
               </ServiceItems>
             </ServiceContainerItems>
 
             <ServiceContainerItems>
               <ServiceItems>
-                <h4>App Design</h4>
-                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
+                <RoundIconConatiner>
+                  <PagesIcon />
+                </RoundIconConatiner>
+              </ServiceItems>
+              <ServiceItems>
+                <h4>Development</h4>
+                <p style={ { color: 'grey' } }>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
               </ServiceItems>
             </ServiceContainerItems>
 
-            <ServiceContainerItems>
-              <ServiceItems>
-                <h4>Ecommerce</h4>
-                <p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</p>
-              </ServiceItems>
-            </ServiceContainerItems>
           </ServiceContainer>
-
-
         </Container>
 
-        <Container primary secondary  >
+        <WorkDefaultContainer />
+
+
+
+        <Container primary secondary >
           <AboutUsContainer>
-            <div class="text-center text-white p-5">
-              <h3>Call To Action</h3>
-              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+            <ServiceTextStyle>
+              <div style={ { width: '40%' } }>
+                <h1 style={ { marginBottom: '1.5rem', color: 'white' } }>Our achievements</h1>
+                <p style={ { color: '#DCDCDC' } }>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+              </div>
+            </ServiceTextStyle>
+            <AboutContainerCard>
+              <AboutContainerItems>
+                <strong style={ { fontSize: '35px', color: '#E43C5C' } }>400</strong>
+                <span>Customers are satisfied with our professional support</span>
+              </AboutContainerItems>
+              <AboutContainerItems >
+                <strong style={ { fontSize: '35px', color: '#E43C5C' } }>1000</strong>
+                <span>Amazing preset options to be mixed and combined</span>
+              </AboutContainerItems>
+              <AboutContainerItems >
+                <strong style={ { fontSize: '35px', color: '#E43C5C' } }>8000</strong>
+                <span>Average response time on live chat support channel</span>
+              </AboutContainerItems>
+
+            </AboutContainerCard>
           </AboutUsContainer>
         </Container>
-        <Container primary style={ { backgroundColor: '#070707' } }>
-          {/* 'rgb(51, 51, 51) */ }
-          <div style={ { width: '100%', height: '200px' } }>
-
-          </div>
 
 
+        <Container primary style={ { marginTop: '0', backgroundColor: '#1A1A1A' } }>
+          <ServiceTextStyle className='mb-5'>
+            <div style={ { width: '40%'  } }>
+              <h1 style={ { marginBottom: '1.5rem', color: 'white' } }>Our satisfied customer says</h1>
+              <p style={ { color: '#DCDCDC' } }>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+            </div>
+          </ServiceTextStyle>
+          <CustomerContainer>
+            <ImageContainer></ImageContainer>
+            <ReviewContainer>
+              <p style={ { color: 'grey' } } >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+            </ReviewContainer>
+          </CustomerContainer>
+          <CustomerContainer>
+            <ReviewContainer primary>
+              <p  style={ { color: 'grey' } } >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+            </ReviewContainer>
+            <ImageContainer></ImageContainer>
+          </CustomerContainer>
+          <CustomerContainer>
+            <ImageContainer></ImageContainer>
+            <ReviewContainer>
+              <p style={ { color: 'grey' } } >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+            </ReviewContainer>
+          </CustomerContainer>
         </Container>
-        <Container primary style={ { marginTop: '0', backgroundColor: 'white' } }>
+
+
+        <Container primary style={ { marginTop: '0', backgroundColor: '#070707' } }>
           <div style={ { width: '100%', height: '200px' } }>
+            <h1 className="mb-4 text-white"> Our Team</h1>
+
 
           </div>
 
@@ -108,6 +165,7 @@ const DashboardPage = ( { children } ) => {
         </Container>
 
       </main>
+      <FooterContainer />
     </>
   );
 };
