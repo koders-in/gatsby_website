@@ -13,17 +13,6 @@ const rotate = keyframes``;
 //   }
 // `;
 
-export const WorkContainer = styled( Flex ).attrs( () => ( {
-  alignCenter: true,
-  full: true,
-  row: true,
-  justifyBetween: true,
-} ) )`
-animation: ${rotate } 2s linear infinite;
-width: 100%;
-height: auto;
-`;
-
 export const WorkContainerItems = styled( Flex ).attrs( ( props ) => ( {} ) )`
 width: 23%;
 height: 240px;
