@@ -1,11 +1,11 @@
 
 export const defaultTheme = {
   color: {
-    grey: '#1A1A1A',
-    black: '#070707',
-    white: 'white',
+    greyColor: '#1A1A1A',
+    blackColor: '#070707',
+    whiteColor: 'white',
     lightGrey: '#DCDCDC',
-    red: '#E43C5C'
+    redColor: '#E43C5C'
   },
   size: {
     inner: '1260px',

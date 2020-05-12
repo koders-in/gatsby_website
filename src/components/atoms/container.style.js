@@ -15,7 +15,7 @@ export const ContainerStyle = styled.section`
   text-align: left;
   background-color: #fff;
   overflow-x: hidden;
-  background-color: ${props => props.primary ? props.theme.color.black : props.theme.color.grey } !important;
+  background-color: ${props => props.primary ? '#070707' : '#1A1A1A' } !important;
 
   text-align: center;
   padding: ${props => props.primary && !props.secondary ? '2rem' : 'none' };

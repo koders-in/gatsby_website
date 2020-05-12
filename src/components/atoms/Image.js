@@ -7,7 +7,7 @@ import Flex, { FlexItem } from 'styled-flex-component';
 const ImageStyle = styled.img`
 width: ${props => props.primary ? '100%' : '20%' };
 height: 150px;
-background-color:  ${props => props.theme.color.red }
+background-color:  #E43C5C;
 `;
 
 

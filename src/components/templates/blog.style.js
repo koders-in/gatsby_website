@@ -6,7 +6,7 @@ export const BlogHeaderStyle = styled.div`
 width: 100%;
 height: 300px;
 position: relative;
-background-color:  ${props => props.theme.color.red }
+background-color:  #E43C5C;
 `;
 
 
