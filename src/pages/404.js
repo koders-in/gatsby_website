@@ -1,6 +1,6 @@
 import React from "react";
 
-import DashboardPage from "../components/pages/dashboard";
+import DashboardPage from "../components/pages/app";
 
 const NotFoundPage = () => (
   <DashboardPage />

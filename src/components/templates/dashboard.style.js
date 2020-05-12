@@ -28,36 +28,6 @@ export const HeaderContainerText = styled.div`
   background: rgba(0,0,0,0.7);
 
 `;
-
-
-export const Container = styled.section`
-  overflow: hidden;
-  z-index: 0;
-  position: relative;
-  height: ${props => props.primary ? 'auto' : '100%' };
-  width: 100%;
-  background-color: white;
-  font-family: open sans,sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff;
-  overflow-x: hidden;
-  text-align: center;
-  padding: ${props => props.primary && !props.secondary ? '2rem' : 'none' };
-  background:
-  url(${props => props.secondary && background1 }) center center;
-  background-attachment:${props => props.secondary && 'fixed' } ;
-
-  `;
-
-export const AboutUsContainer = styled.div`
-  padding: 2rem;
-  width: 100%;
-  background: rgba(0,0,0,0.7);
-`;
 export const ImageStyle = styled.img`
     background-position: 50% 50%;
     background-size: cover;
