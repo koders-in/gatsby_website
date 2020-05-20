@@ -5,7 +5,7 @@ export const defaultTheme = {
     blackColor: '#070707',
     whiteColor: 'white',
     lightGrey: '#DCDCDC',
-    redColor: '#E43C5C'
+    redColor: '#0C61A5'
   },
   size: {
     inner: '1260px',

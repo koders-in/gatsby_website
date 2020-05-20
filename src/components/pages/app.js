@@ -6,8 +6,12 @@ import ServiceContainer from '../templates/service';
 import AchievementContainer from '../templates/achievement';
 import BlogContainer from '../templates/blog';
 import CustomerContainer from '../templates/customer';
+import ContactUsContainer from '../templates/ContactUs'
+import websiteIcon from '../../images/website-icon.png';
+import { RoundIconConatiner } from '../templates/service.style';
+import Image from '../atoms/Image';
 
-import { HeaderContainer, HeaderContainerText } from '../templates/dashboard.style';
+import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
 
 import FooterContainer from '../organism/footer.js';
 class DashboardPage extends React.Component {
@@ -15,9 +19,12 @@ class DashboardPage extends React.Component {
     return (
       <>
         <header>
-          <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707', padding: '1rem' } }>
+          <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707' } }>
             <div className="mx-auto order-0">
-              <a className="navbar-brand mx-auto text-white" href="#">logo</a>
+              <a className="navbar-brand mx-auto text-white" href="#">
+                <RoundIconConatiner primary><Image src={ websiteIcon }
+                /></RoundIconConatiner>
+              </a>
             </div>
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
               <ul className="navbar-nav ml-auto">
@@ -36,8 +43,10 @@ class DashboardPage extends React.Component {
         </header>
         <HeaderContainer>
           <HeaderContainerText data-sal="slide-up" data-sal-delay="500" data-sal-easing="linear">
-            <h1 className="mb-4 text-white">Mighty Web Design Agency</h1>
-            <p className="mb-4 text-white" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+            <InnerContentContainer>
+              <h1 className="mb-4" style={{color:'#0C61A5'}}>Koders</h1>
+              <p className="mb-4 text-white" >Whether you are Fortune-500 or a start-up, we at Koders help you to unlock various business opportunities by creating client-centered products that add value to your business and pave the way for success.</p>
+            </InnerContentContainer>
           </HeaderContainerText>
         </HeaderContainer>
         <main id="main">
@@ -46,6 +55,7 @@ class DashboardPage extends React.Component {
           <AchievementContainer />
           <CustomerContainer />
           <BlogContainer />
+          <ContactUsContainer/>
         </main>
         <FooterContainer />
       </>

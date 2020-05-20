@@ -27,25 +27,43 @@ export const ServiceContainerItems = styled( FlexItem ).attrs( () => ( {
 export const ServiceItems = styled.div`
   text-align: left;
   padding: 1rem
-  background-color: ${props=>props.theme.color.purple}
+  background-color: ${props => props.theme.color.purple }
 `;
 
 export const RoundIconConatiner = styled.div`
-  border: 1px solid white;
+  border: ${props => props.primary ? 'none' : '1px solid white' };
   min-width: 50px;
   height: 50px;
   border-radius: 50%;
-  line-height: 2.7;
+  line-height: ${props => props.primary ? 'none' : '2.7' };
   text-align: center;
+  object-fit: cover;
 
 `;
 
 export const ServiceTextStyle = styled( Flex ).attrs( () => ( {
 } ) )`
-margin-top: 3rem;
-justify-content: center !important;
-display: flex;
--ms-flex-wrap: wrap;
-flex-wrap: wrap;
-line-height: 2;
+  margin-top: 3rem;
+  justify-content: center !important;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  line-height: 2;
+
 `;
+
+export const ListContainerStyle = styled.ul`
+  color: gray;
+  `;
+
+  export const ListItem =styled.li`
+  &:before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  `;
+
