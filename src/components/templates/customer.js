@@ -4,7 +4,7 @@ import { HEADER } from '../constants/header';
 import DefaultTemplate from '../organism/DefaultTemplate';
 import Cards from '../organism/cards';
 import Flex from 'styled-flex-component';
-import { ReviewContainer } from './customer.style.js';
+import { ReviewContainer, ImageContainer } from './customer.style.js';
 import Image from '../atoms/image';
 
 const CustomerContainer = () => {
@@ -17,7 +17,9 @@ const CustomerContainer = () => {
       <Flex column>
         <Cards
           header={
-            <Image></Image>
+            <ImageContainer>
+              <Image></Image>
+            </ImageContainer>
           }
           secondary>
           <ReviewContainer>
@@ -32,12 +34,16 @@ const CustomerContainer = () => {
             </ReviewContainer>
           }
           secondary >
-          <Image></Image>
+          <ImageContainer>
+            <Image></Image>
+          </ImageContainer>
         </Cards>
 
         <Cards
           header={
-            <Image></Image>
+            <ImageContainer>
+              <Image></Image>
+            </ImageContainer>
           }
           secondary>
           <ReviewContainer>

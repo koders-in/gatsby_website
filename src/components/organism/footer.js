@@ -6,25 +6,25 @@ class FooterContainer extends React.Component {
   render () {
     return (
       <footer primary style={ {
-        backgroundColor: '#1A1A1A', padding: ' 8em 0',
+        backgroundColor: '#000000', padding: ' 8em 0',
         color: 'grey'
       } }>
         <div className="container">
           <div className="row">
             <div className="col-lg-3">
               <h2 className="footer-heading mb-3 text-white">About Us</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <p>Whether you are fortune 500 or a startup we can help you to unlock opportunity by creating human-centered products.</p>
             </div>
             <div className="col-lg-8 ml-auto">
               <div className="row">
                 <div className="col-lg-6 ml-auto">
                   <h2 className="footer-heading mb-4 text-white">Quick Links</h2>
                   <ul className="list-unstyled" >
-                    <li><a href="#" style={ { color: '#E43C5C' } }>About Us</a></li>
-                    <li><a href="#" style={ { color: '#E43C5C' } }>Testimonials</a></li>
-                    <li><a href="#" style={ { color: '#E43C5C' } }>Terms of Service</a></li>
-                    <li><a href="#" style={ { color: '#E43C5C' } }>Privacy</a></li>
-                    <li><a href="#" style={ { color: '#E43C5C' } }>Contact Us</a></li>
+                    <li><a href="#" style={ { color: '#0C61A5' } }>About Us</a></li>
+                    <li><a href="#" style={ { color: '#0C61A5' } }>Testimonials</a></li>
+                    <li><a href="#" style={ { color: '#0C61A5' } }>Terms of Service</a></li>
+                    <li><a href="#" style={ { color: '#0C61A5' } }>Privacy</a></li>
+                    <li><a href="#" style={ { color: '#0C61A5' } }>Contact Us</a></li>
                   </ul>
                 </div>
                 <div className="col-lg-6">

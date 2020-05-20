@@ -25,7 +25,7 @@ export const ContainerContent = styled( Flex ).attrs( () => ( {
 } ) )`;
 width: 100 %;
 height: auto;
-padding: 0 ${props => props.primary ? 0 : '5rem' };
+padding: 0 ${props => props.primary ? 0 : '4rem' };
 `;
 
 export const HeaderTextStyle = styled.div`

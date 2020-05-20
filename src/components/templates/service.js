@@ -5,7 +5,7 @@ import DefaultTemplate from '../organism/DefaultTemplate';
 
 import { LaptopMacIcon, DomainIcon, PagesIcon } from '../constants/styledIcons';
 import { Header4, Paragraph } from '../atoms/header';
-import { RoundIconConatiner } from './service.style';
+import { RoundIconConatiner, ListContainerStyle, ListItem } from './service.style';
 
 import Cards from '../organism/cards';
 
@@ -24,7 +24,13 @@ const ServiceContainer = () => {
         primary
       >
         <Header4>Strategy</Header4>
-        <Paragraph primary>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</Paragraph>
+        <ListContainerStyle>
+          <ListItem>Product Strategy</ListItem>
+          <li>Design Exploration</li>
+          <li>Market Research</li>
+          <li>Product Definition</li>
+          <li>User Insights</li>
+        </ListContainerStyle>
       </Cards>
       <Cards
         header={
@@ -34,7 +40,12 @@ const ServiceContainer = () => {
         }
         primary>
         <Header4>Design</Header4>
-        <Paragraph primary>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</Paragraph>
+        <ListContainerStyle>
+          <li>User Experience Design</li>
+          <li>Interaction Design</li>
+          <li>Visual Design</li>
+          <li>Design QA</li>
+        </ListContainerStyle>
       </Cards>
       <Cards
         header={
@@ -43,8 +54,12 @@ const ServiceContainer = () => {
           </RoundIconConatiner>
         }
         primary>
-        <Header4>Development</Header4>
-        <Paragraph primary>Lorem ipsum dolor sit amet. Consectetur adipisicing elit Eaque commodi.</Paragraph>
+        <Header4>Insights</Header4>
+        <ListContainerStyle>
+          <li>Target Customer Insights</li>
+          <li>Analytics & Metrics tracking</li>
+          <li>Reviews & Reports</li>
+        </ListContainerStyle>
       </Cards>
     </DefaultTemplate>
   </>

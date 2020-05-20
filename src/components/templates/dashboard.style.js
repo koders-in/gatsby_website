@@ -28,27 +28,9 @@ export const HeaderContainerText = styled.div`
   background: rgba(0,0,0,0.7);
 
 `;
-export const ImageStyle = styled.img`
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 0px;
-    left: 0px;
-    width: 1349px;
-    height: 100vh;
-    overflow: hidden;
-    pointer-events: none;
-    margin-top: 0px;
-    transform: translate3d(0px, 0px, 0px);
 
-`;
-
-
-export const BackgroundImageStyle = styled.div`
-  width: 100%;
-  height: 200px;
-  background-image: url(${background1 });
+export const InnerContentContainer = styled.div`
+  width: 70%;
   margin:0;
   padding:0;
-  z-index: -10;
 `;

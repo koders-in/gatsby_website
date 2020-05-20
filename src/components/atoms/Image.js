@@ -5,9 +5,11 @@ import Flex, { FlexItem } from 'styled-flex-component';
 
 
 const ImageStyle = styled.img`
-width: ${props => props.primary ? '100%' : '20%' };
-height: 150px;
-background-color:  #E43C5C;
+  height: 150px;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  z-index: -1;
 `;
 
 
