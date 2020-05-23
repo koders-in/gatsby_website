@@ -23,13 +23,12 @@ const ServiceContainer = () => {
         }
         primary
       >
-        <Header4>Strategy</Header4>
+        <Header4>Development</Header4>
         <ListContainerStyle>
-          <ListItem>Product Strategy</ListItem>
-          <li>Design Exploration</li>
-          <li>Market Research</li>
-          <li>Product Definition</li>
-          <li>User Insights</li>
+          <li>Android Development</li>
+          <li>iOS Development</li>
+          <li>Web Development</li>
+          <li>Software Development</li>
         </ListContainerStyle>
       </Cards>
       <Cards
@@ -44,7 +43,6 @@ const ServiceContainer = () => {
           <li>User Experience Design</li>
           <li>Interaction Design</li>
           <li>Visual Design</li>
-          <li>Design QA</li>
         </ListContainerStyle>
       </Cards>
       <Cards
@@ -54,10 +52,10 @@ const ServiceContainer = () => {
           </RoundIconConatiner>
         }
         primary>
-        <Header4>Insights</Header4>
+        <Header4>IT Solutions</Header4>
         <ListContainerStyle>
-          <li>Target Customer Insights</li>
-          <li>Analytics & Metrics tracking</li>
+          <li>Customer Insights</li>
+          <li>Software Support</li>
           <li>Reviews & Reports</li>
         </ListContainerStyle>
       </Cards>

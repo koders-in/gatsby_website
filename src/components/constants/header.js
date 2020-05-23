@@ -1,9 +1,9 @@
 export const HEADER = {
-  SERVICE: 'Web & Mobile app design, bring your ideas to life',
+  SERVICE: 'Our Services',
   WORK: 'Our Work',
-  ACHIEVEMENT: 'Our achievements',
+  ACHIEVEMENT: 'Fun Facts',
   BLOG: 'Our Blog',
-  CUSTOMER: 'Our satisfied customer says',
+  CUSTOMER: 'Testimonials',
   CONTACTUS: 'Contact US',
   QUOTE: ''
 };
