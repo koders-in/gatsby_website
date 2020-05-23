@@ -6,10 +6,10 @@ import ServiceContainer from '../templates/service';
 import AchievementContainer from '../templates/achievement';
 import BlogContainer from '../templates/blog';
 import CustomerContainer from '../templates/customer';
-import ContactUsContainer from '../templates/ContactUs'
+import ContactUsContainer from '../templates/contactUs'
 import websiteIcon from '../../images/website-icon.png';
 import { RoundIconConatiner } from '../templates/service.style';
-import Image from '../atoms/Image';
+import Image from '../atoms/Images';
 
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
 

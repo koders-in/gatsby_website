@@ -29,8 +29,8 @@ export const TextArea = styled.textarea`
 `
 
 export const Button = styled.button`
-    background-color: #df0e62;
-    border-color: #df0e62;
+    background-color: #0C61A5;
+    border-color: #0C61A5;
     padding: 15px 30px;
     font-size: 14px;
     font-weight: bold;

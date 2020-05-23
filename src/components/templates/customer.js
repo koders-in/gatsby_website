@@ -1,11 +1,11 @@
 import React from "react";
 
 import { HEADER } from '../constants/header';
-import DefaultTemplate from '../organism/DefaultTemplate';
+import DefaultTemplate from '../organism/defaultTemplate';
 import Cards from '../organism/cards';
 import Flex from 'styled-flex-component';
 import { ReviewContainer, ImageContainer } from './customer.style.js';
-import Image from '../atoms/image';
+import Images from '../atoms/Images';
 
 const CustomerContainer = () => {
   return ( <>
@@ -18,7 +18,7 @@ const CustomerContainer = () => {
         <Cards
           header={
             <ImageContainer>
-              <Image></Image>
+              <Images></Images>
             </ImageContainer>
           }
           secondary>
@@ -35,14 +35,14 @@ const CustomerContainer = () => {
           }
           secondary >
           <ImageContainer>
-            <Image></Image>
+            <Images></Images>
           </ImageContainer>
         </Cards>
 
         <Cards
           header={
             <ImageContainer>
-              <Image></Image>
+              <Images></Images>
             </ImageContainer>
           }
           secondary>
