@@ -3,7 +3,6 @@ import React from "react";
 import { HEADER } from '../constants/header';
 import DefaultTemplate from '../organism/defaultTemplate';
 import unity from '../../images/unity.png';
-import powershell from '../../images/powershell.png';
 import parking from '../../images/parking.png';
 import { WorkContainerItems, WorkContainerCards, WorkContainerInnerItems } from './work.style';
 
