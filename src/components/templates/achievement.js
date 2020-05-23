@@ -1,7 +1,7 @@
 import React from "react";
 
 import { HEADER } from '../constants/header';
-import DefaultTemplate from '../organism/DefaultTemplate';
+import DefaultTemplate from '../organism/defaultTemplate';
 import Cards from '../organism/cards';
 
 
