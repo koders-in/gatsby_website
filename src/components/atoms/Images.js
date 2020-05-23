@@ -13,11 +13,11 @@ const ImageStyle = styled.img`
 `;
 
 
-const Image = ( props ) => {
+const Images= ( props ) => {
   return ( <ImageStyle { ...props }
     alt='image'
   ></ImageStyle> );
 };
 
-export default Image;
+export default Images;
 

@@ -9,7 +9,7 @@ import CustomerContainer from '../templates/customer';
 import ContactUsContainer from '../templates/ContactUs'
 import websiteIcon from '../../images/website-icon.png';
 import { RoundIconConatiner } from '../templates/service.style';
-import Image from '../atoms/Image';
+import Image from '../atoms/Images';
 
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
 
