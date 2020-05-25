@@ -30,7 +30,8 @@ export const WorkContainerCards = styled( FlexItem ).attrs( () => ( {
   height: ${props => !props.primary && ' 100%' };
   color: black;
   background-color: white;
-   margin: 0.5rem;
+  margin: 0.5rem;
+  z-index: -10;
  `;
 
 export const WorkContainerInnerItems = styled( Flex ).attrs( () => ( {
