@@ -8,6 +8,7 @@ import { Link } from 'gatsby'
 import Cards from '../organism/cards';
 import Images from '../atoms/Images';
 import blogPage from "../../pages/blog-1.js";
+import {navigate} from 'gatsby'
 import { CovidBlog } from '../constants/blogLinks'
 
 const BlogContainer = () => {
@@ -29,7 +30,7 @@ const BlogContainer = () => {
             marginBottom: '10px',
             color: 'grey'
           }} ><span>May 24, 2020</span></div>
-          <a href={CovidBlog}><span>Covid-19 and your forgotten quest to start a blog</span></a>
+          <Link to='/blog-1'>Covid-19 and your forgotten quest to start a blog</Link>
         </BlogContentStyle>
       </Cards>
 
