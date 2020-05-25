@@ -15,5 +15,5 @@ export const BlogContentStyle = styled.div`
     height: auto;
     padding : 1.3rem;
     text-align: left;
-
+    width:350px;
 `;
