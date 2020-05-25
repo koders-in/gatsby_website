@@ -8,33 +8,31 @@ import { Link } from 'gatsby'
 import Cards from '../organism/cards';
 import Images from '../atoms/Images';
 import blogPage from "../../pages/blog-1.js";
+import { CovidBlog } from '../constants/blogLinks'
 
 const BlogContainer = () => {
-  return ( <>
+  return (<>
     <DefaultTemplate
-      title={ HEADER.BLOG }
-      quote={ HEADER.QUOTE }
-      style={ { padding: '0 5rem' } }
+      title={HEADER.BLOG}
+      quote={HEADER.QUOTE}
+      style={{ padding: '0 5rem' }}
       primary
       isBlog
     >
       <Cards
         header={
-          <BlogHeaderStyle> 
-            <img src={blog1} />
-            
-          </BlogHeaderStyle>
+          <img src={blog1} />
         }>
         <BlogContentStyle>
-          <div style={ {
-            marginTop:'10px',
+          <div style={{
+            marginTop: '10px',
             marginBottom: '10px',
             color: 'grey'
-          } } ><span>May 24, 2020</span></div>
-          <p>Covid-19 and your forgotten quest to start a blog</p>
+          }} ><span>May 24, 2020</span></div>
+          <a href={CovidBlog}><span>Covid-19 and your forgotten quest to start a blog</span></a>
         </BlogContentStyle>
       </Cards>
-      
+
     </DefaultTemplate>
   </>
   );

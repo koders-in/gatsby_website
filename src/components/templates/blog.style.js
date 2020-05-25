@@ -6,7 +6,6 @@ export const BlogHeaderStyle = styled.div`
 width: 100%;
 height: 300px;
 position: relative;
-background-color:  #0C61A5;
 `;
 
 
