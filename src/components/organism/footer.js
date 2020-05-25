@@ -25,9 +25,9 @@ class FooterContainer extends React.Component {
             <div className="col-lg-8 ml-auto mt-5">
               <div className="row">
                 <div className="col-lg-10" style={{ textAlign: 'right' }}>
-                  <a href="#" style={{ paddingRight: '1.7rem' }}><FacebookCircleIcon /></a>
-                  <a href="#" style={{ paddingRight: '1.7rem' }}><InstagramIcon /></a>
-                  <a href="#" ><TwitterIcon /></a>
+                  <a href="https://www.facebook.com/Koders-Organization-706497809743948/" style={{ paddingRight: '1.7rem' }}><FacebookCircleIcon /></a>
+                  <a href="https://www.instagram.com/koders_in/" style={{ paddingRight: '1.7rem' }}><InstagramIcon /></a>
+                  <a href="https://twitter.com/KodersHQ" ><TwitterIcon /></a>
                 </div>
               </div>
             </div>

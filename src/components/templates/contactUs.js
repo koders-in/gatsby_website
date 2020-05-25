@@ -35,6 +35,12 @@ const ContactUsContainer = () => {
           </div>
           <div className="row form-group">
             <div className="col-md-12">
+              <label className="text-white" for="contact">Contact</label>
+              <InputBox type="number" id="contact" className="form-control" />
+            </div>
+          </div>
+          <div className="row form-group">
+            <div className="col-md-12">
               <label className="text-white" for="subject">Subject</label>
               <InputBox type="subject" id="subject" className="form-control" />
             </div>
