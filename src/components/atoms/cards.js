@@ -6,7 +6,7 @@ import Flex, { FlexItem } from 'styled-flex-component';
 
 const CardsStyle = styled( FlexItem ).attrs( () => ( {
 } ) )`
-  width: ${props => props.secondary ? '100%' : '31%' };
+  width: ${props => props.secondary ? '100%' : '30%' };
   margin-bottom: ${props => props.secondary && '3rem' };
   color: #FCF8FF;
   display: flex;

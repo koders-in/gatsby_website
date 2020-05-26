@@ -5,7 +5,6 @@ import Flex, { FlexItem } from 'styled-flex-component';
 
 
 const ImageStyle = styled.img`
-  height: 150px;
   max-width: 100%;
   max-height: 100%;
   position: relative;

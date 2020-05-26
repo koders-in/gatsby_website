@@ -9,7 +9,7 @@ import { CardHeaderStyle, CardContentStyle } from './cards.style';
 
 
 
-const Cards = ( { children, header, primary, secondary } ) => {
+const Cards = ( { children, header, primary, secondary, isWork } ) => {
 
   if ( secondary ) {
     return ( <CardItems primary={ primary } secondary={ secondary }>
@@ -19,11 +19,11 @@ const Cards = ( { children, header, primary, secondary } ) => {
   }
 
   return (
-    <CardItems primary={ primary } >
-      <CardHeaderStyle primary={ primary }>
+    <CardItems primary={ primary }  >
+      <CardHeaderStyle primary={ primary } isWork={isWork}>
         { header }
       </CardHeaderStyle>
-      <CardHeaderStyle primary={ primary }>
+      <CardHeaderStyle primary={ primary } isWork={isWork}>
         { children }
       </CardHeaderStyle>
     </CardItems> );

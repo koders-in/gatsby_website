@@ -34,3 +34,7 @@ margin-bottom: 3rem
 
 `;
 
+export const WorkContainerStyle= styled.div`
+height: 450px;
+width: 100%;`;
+
