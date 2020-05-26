@@ -53,7 +53,7 @@ class DashboardPage extends React.Component {
           <ServiceContainer />
           <WorkContainer />
           <AchievementContainer />
-          {/* <CustomerContainer /> */}
+         <CustomerContainer /> 
           <BlogContainer />
           <ContactUsContainer/>
         </main>

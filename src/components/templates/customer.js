@@ -23,14 +23,17 @@ const CustomerContainer = () => {
           }
           secondary>
           <ReviewContainer>
-            <p style={ { color: 'grey' } } >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+            <h5 style={ { color: 'white' } } ><b>Jai agarwal (Managing Director, JaiG )</b><br></br></h5>
+            <p style={ { color: 'grey' } } >I am glad that we have such a zealous team who always astonish us with
+      there amazing work out of what we have planned forth. </p>
           </ReviewContainer>
         </Cards>
 
         <Cards
           header={
             <ReviewContainer primary>
-              <p style={ { color: 'grey' } } >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+              <h5 style={ { color: 'white' } } ><b>DIT Student</b><br></br></h5>
+            <p style={ { color: 'grey' } } >Their project is delivered with proper documentation and proper explanation of the code. Their codial service is a great way to get work done within a deadline</p>
             </ReviewContainer>
           }
           secondary >
@@ -47,7 +50,8 @@ const CustomerContainer = () => {
           }
           secondary>
           <ReviewContainer>
-            <p style={ { color: 'grey' } } >Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. </p>
+          <h5 style={ { color: 'white' } } ><b>Bradley B.</b><br></br></h5>
+            <p style={ { color: 'grey' } } ><i>Excellent work - good communication - Understanding - Professional - Highly recommend!</i></p>
           </ReviewContainer>
         </Cards>
       </Flex>
