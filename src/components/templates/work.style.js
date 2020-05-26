@@ -13,38 +13,23 @@ const rotate = keyframes``;
 //   }
 // `;
 
-export const WorkContainerItems = styled( Flex ).attrs( ( props ) => ( {} ) )`
-width: 23%;
-height: 240px;
-color: black;
-display: flex;
+export const CardSContainer = styled( Flex ).attrs( ( props ) => ( {
+  row: true
+} ) )`
+width: 100%;
+justify-content: center;
 flex-direction: ${props => props.primary && 'column' };
 &:hover {
  }
 `;
 
-export const WorkContainerCards = styled( FlexItem ).attrs( () => ( {
-
-} ) )`
-  width: ${props => props.secondary ? '50%' : '100%' };
-  height: ${props => !props.primary && ' 100%' };
-  color: black;
+export const WorkContentStyle = styled.div`
   background-color: white;
-  margin: 0.5rem;
-  z-index: -10;
- `;
-
-export const WorkContainerInnerItems = styled( Flex ).attrs( () => ( {
-  flex: '0 0 100%',
-} ) )`
-  width: 100%;
-  height: 50%;
   color: black;
-  margin: 0;
-  padding: 0;
-`;
-
-export const WorkItems = styled.div`
-  padding: 20px;
-  margin-top: 20%;
-`;
+  height: auto;
+  padding : 0.6rem;
+  text-align: left;
+  color: rgb(12, 97, 165);
+  text-align: center;
+  width: 350px;
+ `;
