@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FooterContainerStye } from './footer.style';
-import { FacebookCircleIcon, InstagramIcon, TwitterIcon } from '../constants/styledIcons';
+import { FacebookCircleIcon, InstagramIcon, TwitterIcon,LinkedinIcon,GithubIcon } from '../constants/styledIcons';
 
 class FooterContainer extends React.Component {
   render() {
@@ -27,7 +27,9 @@ class FooterContainer extends React.Component {
                 <div className="col-lg-10" style={{ textAlign: 'right' }}>
                   <a href="https://www.facebook.com/Koders-Organization-706497809743948/" style={{ paddingRight: '1.7rem' }}><FacebookCircleIcon /></a>
                   <a href="https://www.instagram.com/koders_in/" style={{ paddingRight: '1.7rem' }}><InstagramIcon /></a>
-                  <a href="https://twitter.com/KodersHQ" ><TwitterIcon /></a>
+                  <a href="https://twitter.com/KodersHQ" style={{ paddingRight: '1.7rem' }}><TwitterIcon /></a>
+                  <a href="https://www.linkedin.com/in/koders-in-88575a1a0/" style={{ paddingRight: '1.7rem' }} ><LinkedinIcon /></a>
+                  <a href="https://github.com/koders-in" ><GithubIcon /></a>
                 </div>
               </div>
             </div>
