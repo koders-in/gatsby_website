@@ -22,7 +22,7 @@ export const HeaderContainerText = styled.div`
   flex-direction: column;
   text-align: center;
   padding: 20px 15px;
-  background: rgba(0,0,0,0.7);
+  background:rgba(46, 49, 49, 1);
 
 `;
 

@@ -16,11 +16,7 @@ const CustomerContainer = () => {
     >
       <Flex column>
         <Cards
-          header={
-            <ImageContainer>
-              <Images></Images>
-            </ImageContainer>
-          }
+          
           secondary>
           <ReviewContainer>
             <h5 style={ { color: 'white' } } ><b>Jai agarwal (Managing Director, JaiG )</b><br></br></h5>
@@ -37,18 +33,14 @@ const CustomerContainer = () => {
             </ReviewContainer>
           }
           secondary >
-          <ImageContainer>
-            <Images></Images>
-          </ImageContainer>
+         
         </Cards>
 
         <Cards
-          header={
-            <ImageContainer>
-              <Images></Images>
-            </ImageContainer>
-          }
+          
           secondary>
+          
+        
           <ReviewContainer>
           <h5 style={ { color: 'white' } } ><b>Bradley B.</b><br></br></h5>
             <p style={ { color: 'grey' } } ><i>Excellent work - good communication - Understanding - Professional - Highly recommend!</i></p>
