@@ -17,8 +17,6 @@ class FooterContainer extends React.Component {
               <ul className="list-unstyled" >
                 <li><a href="#" style={{ color: '#0C61A5' }}>About Us</a></li>
                 <li><a href="#" style={{ color: '#0C61A5' }}>Testimonials</a></li>
-                <li><a href="#" style={{ color: '#0C61A5' }}>Terms of Service</a></li>
-                <li><a href="#" style={{ color: '#0C61A5' }}>Privacy</a></li>
                 <li><a href="#" style={{ color: '#0C61A5' }}>Contact Us</a></li>
               </ul>
             </div>

@@ -6,15 +6,18 @@ import ServiceContainer from '../templates/service';
 import AchievementContainer from '../templates/achievement';
 import BlogContainer from '../templates/blog';
 import CustomerContainer from '../templates/customer';
-import ContactUsContainer from '../templates/contactUs'
+import ContactUsContainer from '../templates/contactUs';
+import AboutContainer from '../templates/about';
 import websiteIcon from '../../images/website-icon.png';
 import { RoundIconConatiner } from '../templates/service.style';
 import Image from '../atoms/Images';
+import {Link} from "gatsby"
 
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
 
 import FooterContainer from '../organism/footer.js';
 class DashboardPage extends React.Component {
+  
   render () {
     return (
       <>
@@ -32,10 +35,11 @@ class DashboardPage extends React.Component {
                   <a className="nav-link text-white" href="#">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">About</a>
+                  <a className="nav-link text-white" href="">About</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">Contact</a>
+    <Link className="nav-link text-white" to={<ContactUsContainer/>} >Contact</Link>
+                 
                 </li>
               </ul>
             </div>
@@ -50,6 +54,7 @@ class DashboardPage extends React.Component {
           </HeaderContainerText>
         </HeaderContainer>
         <main id="main">
+          <AboutContainer/>
           <ServiceContainer />
           <WorkContainer />
           <AchievementContainer />

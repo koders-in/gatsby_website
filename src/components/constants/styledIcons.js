@@ -1,11 +1,15 @@
 import styled from 'styled-components';
-import { LaptopMac, Domain, Pages, } from '@styled-icons/material';
+import { LaptopMac, Domain, Pages, WbIncandescent } from '@styled-icons/material';
 import { FacebookCircle, Instagram, Twitter,Linkedin,Github } from '@styled-icons/boxicons-logos'
 
 
 export const LaptopMacIcon = styled(LaptopMac)`
   color: #0C61A5;
   width: 1.56rem;
+`;
+export const WbIncandescentIcon = styled(WbIncandescent)`
+  color: #0C61A5;
+  width: 8rem;
 `;
 
 export const DomainIcon = styled(Domain)`

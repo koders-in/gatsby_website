@@ -1,4 +1,5 @@
 export const HEADER = {
+  ABOUT:'About Koders',
   SERVICE: 'Our Services',
   WORK: 'Our Work',
   ACHIEVEMENT: 'Fun Facts',
