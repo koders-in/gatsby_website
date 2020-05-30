@@ -11,8 +11,7 @@ import AboutContainer from '../templates/about';
 import websiteIcon from '../../images/website-icon.png';
 import { RoundIconConatiner } from '../templates/service.style';
 import Image from '../atoms/Images';
-import {Link} from "gatsby"
-
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'; 
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
 
 import FooterContainer from '../organism/footer.js';
@@ -20,8 +19,9 @@ class DashboardPage extends React.Component {
   
   render () {
     return (
-      <>
+    <>
         <header>
+        <Router>
           <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707' } }>
             <div className="mx-auto order-0">
               <a className="navbar-brand mx-auto text-white" href="#">
@@ -35,15 +35,21 @@ class DashboardPage extends React.Component {
                   <a className="nav-link text-white" href="#">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="">About</a>
+                <Link className="nav-link text-white" to="/about">About Us</Link>
                 </li>
                 <li className="nav-item">
-    <Link className="nav-link text-white" to={<ContactUsContainer/>} >Contact</Link>
+    <Link className="nav-link text-white" to="/contact" >Contact</Link>
                  
                 </li>
               </ul>
+              <Switch> 
+              
+              <Route path='/about' component={AboutContainer}></Route> 
+              <Route path='/contact' component={ContactUsContainer}></Route> 
+            </Switch>
             </div>
           </nav>
+          </Router>
         </header>
         <HeaderContainer>
           <HeaderContainerText data-sal="slide-up" data-sal-delay="500" data-sal-easing="linear">
