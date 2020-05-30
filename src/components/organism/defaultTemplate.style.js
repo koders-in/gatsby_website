@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Flex, { FlexItem } from 'styled-flex-component';
+import Flex from 'styled-flex-component';
 
 
 export const DefaultContainerStyle = styled.div`

@@ -7,7 +7,6 @@ import Flex from 'styled-flex-component';
 import Images from '../atoms/Images';
 import { IMAGE } from '../constants/images';
 import { AboutContentStyle,ImageContainer,ComponentContainer} from './about.style.js';
-import { LaptopMacIcon,WbIncandescentIcon } from '../constants/styledIcons';
 
 
 const AboutContainer = () => {
@@ -43,7 +42,7 @@ const AboutContainer = () => {
             height: '280px',
             border:'solid'
           }} >
-                <img style={{width:'320px'}} src={IMAGE.creativity}/> <br></br><br></br>
+                <img style={{width:'320px'}} src={IMAGE.creativity} alt="Creativity"/> <br></br><br></br>
               <h4 style={{color:'#0C61A5'}}>We're Creative</h4>
           </div>  
             </ComponentContainer>   
@@ -54,7 +53,7 @@ const AboutContainer = () => {
             backgroundColor:'#A9A9A9',
             height: '280px',
             border:'solid'
-          }} ><img style={{width:'150px'}} src={IMAGE.professional}/> <br></br><br></br>
+          }} ><img style={{width:'150px'}} src={IMAGE.professional} alt="Professional"/> <br></br><br></br>
               <h4 style={{color:'#0C61A5'}}>We're Professional</h4></div>
         </ComponentContainer>
         <ComponentContainer>
@@ -64,7 +63,7 @@ const AboutContainer = () => {
             backgroundColor:'#A9A9A9',
             height: '280px',
             border:'solid'
-          }} ><img style={{width:'150px'}} src={IMAGE.efficient}/> <br></br><br></br>
+          }} ><img style={{width:'150px'}} src={IMAGE.efficient} alt="Efficient"/> <br></br><br></br>
               <h4 style={{color:'#0C61A5'}}>We're Efficient</h4></div>
         </ComponentContainer>
             

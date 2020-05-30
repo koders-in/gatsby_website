@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import websiteIcon from '../images/website-icon.png';
 import { RoundIconConatiner } from '../components/templates/service.style';
 import Image from '../components/atoms/Images';
@@ -13,7 +12,7 @@ class BlogPage extends React.Component {
         <header>
           <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707' } }>
             <div className="mx-auto order-0">
-              <a className="navbar-brand mx-auto text-white" href="#">
+              <a className="navbar-brand mx-auto text-white" href="# ">
                 <RoundIconConatiner primary><Image src={ websiteIcon }
                 /></RoundIconConatiner>
               </a>
@@ -26,7 +25,6 @@ class BlogPage extends React.Component {
         <HeaderContainer>
           <HeaderContainerText data-sal="slide-up" data-sal-delay="500" data-sal-easing="linear">
             <InnerContentContainer>
-              <h1 className="mb-4" style={{color:'#0C61A5'}}></h1>
               <h2 style={{color:'#000000'}}><br></br><b>Covid-19 and your forgotten quest to start a blog</b></h2>
               <p className="mb-4 text-white"><br></br>Procrastination? Well it is one aspect of the story. You are a busy person; you have things to do. After running all errands, doing chores and completing your part of the work for the day. You finally sit down to write something, something which you wanted to put up on your blog. But too bad, you are suffering from a writer’s block or worse you are too tired to write anything. So, you relax and push the thought in the back of your head. And the next day, same story. And the next day and the next day and so on….
 However, in recent times particularly after the outbreak of coronavirus which originated from the wet food market in Wuhan, China. There has been a surge in numbers of users writing blogs. It seems like the time people were trying to find all those years has finally been given to them.

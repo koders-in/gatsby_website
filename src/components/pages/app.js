@@ -11,20 +11,18 @@ import AboutContainer from '../templates/about';
 import websiteIcon from '../../images/website-icon.png';
 import { RoundIconConatiner } from '../templates/service.style';
 import Image from '../atoms/Images';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'; 
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
-
 import FooterContainer from '../organism/footer.js';
+
 class DashboardPage extends React.Component {
   
   render () {
     return (
     <>
         <header>
-        <Router>
           <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707' } }>
             <div className="mx-auto order-0">
-              <a className="navbar-brand mx-auto text-white" href="#">
+              <a className="navbar-brand mx-auto text-white" href="# ">
                 <RoundIconConatiner primary><Image src={ websiteIcon }
                 /></RoundIconConatiner>
               </a>
@@ -32,24 +30,17 @@ class DashboardPage extends React.Component {
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">Home</a>
+                  <a className="nav-link text-white" href="# ">Home</a>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link text-white" to="/about">About Us</Link>
+                <a className="nav-link text-white" href="# ">About Us</a>
                 </li>
                 <li className="nav-item">
-    <Link className="nav-link text-white" to="/contact" >Contact</Link>
-                 
+                <a className="nav-link text-white" href="# " >Contact</a>  
                 </li>
               </ul>
-              <Switch> 
-              
-              <Route path='/about' component={AboutContainer}></Route> 
-              <Route path='/contact' component={ContactUsContainer}></Route> 
-            </Switch>
             </div>
           </nav>
-          </Router>
         </header>
         <HeaderContainer>
           <HeaderContainerText data-sal="slide-up" data-sal-delay="500" data-sal-easing="linear">
