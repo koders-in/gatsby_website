@@ -3,8 +3,8 @@ import React ,{useState} from "react";
 import { RoundIconConatiner } from './service.style';
 import websiteIcon from '../../images/website-icon.png';
 import Image from '../atoms/Images';
-import { Link } from "gatsby"
 import {NaviconIcon} from '../constants/styledIcons'
+import { Link } from "react-scroll";
 
 
 const NavContainer = () => {
@@ -30,15 +30,16 @@ const NavContainer = () => {
                 <div className={`navbar-collapse ${isShow ? 'collapse show':'collapse'}`} id="collapsibleNavbar">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="# ">Home</a>
+                        <Link className="nav-link text-white" to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="# ">About</a>
+                        <Link className="nav-link text-white" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white" to="# " >Contact</Link>
+                        <Link className="nav-link text-white" to="contact" spy={true} smooth={true} offset={-500} duration={500}>Contact</Link>
                         </li>
                     </ul>
+                    
                 </div>
             </nav>
         </header>

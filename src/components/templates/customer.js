@@ -17,8 +17,7 @@ const CustomerContainer = () => {
           secondary>
           <ReviewContainer>
             <h5 style={ { color: '#0C61A5'} } ><b>Jai agarwal (Managing Director, JaiG )</b><br></br></h5>
-            <p style={ { color: 'grey' } } ><i>"I am glad that we have such a zealous team who always astonish us with
-      there amazing work out of what we have planned forth. "</i></p>
+            <p style={ { color: 'grey' } } ><i>"I am proud to be a part of a zealous team who always astonishes me with great results. I received exactly what we had planned together. Thank you, Koders."</i></p>
           </ReviewContainer>
         </Cards>
 
@@ -26,7 +25,7 @@ const CustomerContainer = () => {
           header={
             <ReviewContainer primary>
               <h5 style={ { color: '#0C61A5'} } ><b>DIT Student</b><br></br></h5>
-            <p style={ { color: 'grey' } } ><i>"Their project is delivered with proper documentation and proper explanation of the code. Their codial service is a great way to get work done within a deadline"</i></p>
+            <p style={ { color: 'grey' } } ><i>"The Software was developed in an organized manner. There was a methodical documentation and explanation of the code. Their walk through video proved very instrumental in learning the architecture of the software. Koders always had a cordial and happy-to-help attitude even under pressure."</i></p>
             </ReviewContainer>
           }
           secondary >

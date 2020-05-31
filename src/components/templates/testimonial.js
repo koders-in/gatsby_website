@@ -71,7 +71,6 @@ class TestimonialComponent extends Component {
         return (
             <DefaultTemplate
       title={ HEADER.CUSTOMER }
-      quote={ HEADER.QUOTE }
       isCustomer
     >
             <div className="testimonialSection">

@@ -9,6 +9,7 @@ import { ImageContainer, ComponentContainer, ImageView } from './about.style.js'
 
 const AboutContainer = () => {
   return (<>
+  <div id="about">
     <DefaultTemplate
       title={HEADER.ABOUT}
       line={HEADER.LINE}
@@ -31,6 +32,7 @@ const AboutContainer = () => {
           </ImageContainer>
      </ComponentContainer>
     </DefaultTemplate>
+    </div>
   </>
   );
 };

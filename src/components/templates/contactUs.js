@@ -1,7 +1,7 @@
 import React from "react";
 import { HEADER } from '../constants/header';
 import DefaultTemplate from '../organism/defaultTemplate';
-import { FormContainerStyle, TextArea, Button } from './contactUs.style';
+import { FormContainerStyle, Button } from './contactUs.style';
 
 class ContactUsContainer extends React.Component{
   constructor(props) {
@@ -33,10 +33,11 @@ onSubmit(e) {
 }
   render(){
   return ( <>
+  <div id="about">
     <DefaultTemplate
       title={ HEADER.CONTACTUS } isWork>
       <FormContainerStyle className="col-md-9">
-        <form action="#">
+        <form action="post">
           <div className="row form-group">
             <div className="col-md-6 mb-3 mb-md-0">
               <label htmlFor="first-name" className="text-white">First Name</label>
@@ -68,7 +69,7 @@ onSubmit(e) {
           <div className="row form-group">
             <div className="col-md-12">
               <label htmlFor="message" className="text-white">Message</label>
-              <input name="message" id="message" cols="30" rows="7" onChange={this.onChange.bind(this)}  className="form-control" placeholder="Write your notes or questions here..."/>
+              <input aria-label="subject" name="message" id="message" cols="30" rows="7" onChange={this.onChange.bind(this)}  className="form-control" placeholder="Write your notes or questions here..."/>
             </div>
           </div>
           <div className="row form-group">
@@ -79,6 +80,7 @@ onSubmit(e) {
         </form>
       </FormContainerStyle>
     </DefaultTemplate>
+    </div>
   </>
   );
   }
