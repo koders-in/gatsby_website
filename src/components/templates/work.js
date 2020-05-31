@@ -24,7 +24,7 @@ const WorkContainer = () => {
       isWork
     >
       <Carousel activeIndex={index} onSelect={handleSelect}
-        style={{ height: '380px' }}>
+        style={{ height: '380px', marginLeft: '-5rem' }}>
         <Carousel.Item>
           <CardSContainer>
             <Cards

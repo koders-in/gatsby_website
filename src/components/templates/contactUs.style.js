@@ -1,10 +1,17 @@
 import styled from "styled-components";
+import media from 'styled-media-query';
+
+const setFormContainerForSmallDevice = () =>
+  media.lessThan( 'large' )`
+    margin: 0 4rem;
+  `;
+
 
 export const FormContainerStyle = styled.div`
   text-align: left;
-  margin: 0 11rem;
-  float: right;
-
+  display: block;
+  margin: 0 10rem;
+  ${setFormContainerForSmallDevice}
 `;
 
 export const InputBox = styled.input`

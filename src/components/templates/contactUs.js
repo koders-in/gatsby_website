@@ -30,18 +30,13 @@ onSubmit(e) {
     let contact = this.state.contact;
     let subject = this.state.subject;
     let message = this.state.message;
-    console.log(fname,lname,email,contact,subject,message);
-   // var mailto_link = 'mailto:' + 'koders@outlook.in'+'?subject='+subject+'?body='+message
-    //window.open(mailto_link, 'emailWindow')
-    // etc
 }
   render(){
   return ( <>
     <DefaultTemplate
-      title={ HEADER.CONTACTUS }
-      quote={ HEADER.QUOTE } >
-      <FormContainerStyle className="col-md-8">
-        <form id="contactform" onSubmit={this.onSubmit.bind(this)}>
+      title={ HEADER.CONTACTUS } isWork>
+      <FormContainerStyle className="col-md-9">
+        <form action="#">
           <div className="row form-group">
             <div className="col-md-6 mb-3 mb-md-0">
               <label htmlFor="first-name" className="text-white" for="fname">First Name</label>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { LaptopMac, Domain, Pages, WbIncandescent } from '@styled-icons/material';
-import { FacebookCircle, Instagram, Twitter,Linkedin,Github } from '@styled-icons/boxicons-logos'
-
+import { FacebookCircle, Instagram, Twitter, Linkedin, Github } from '@styled-icons/boxicons-logos'
+import { Navicon } from '@styled-icons/evil';
 
 export const LaptopMacIcon = styled(LaptopMac)`
   color: #0C61A5;
@@ -35,4 +35,8 @@ export const LinkedinIcon = styled(Linkedin)`
 `
 export const GithubIcon = styled(Github)`
   width: 2.3rem;
+`
+export const NaviconIcon = styled(Navicon)`
+  width: 2.3rem;
+  background-color: grey;
 `

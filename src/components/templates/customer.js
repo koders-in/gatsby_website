@@ -10,12 +10,10 @@ const CustomerContainer = () => {
   return ( <>
     <DefaultTemplate
       title={ HEADER.CUSTOMER }
-      quote={ HEADER.QUOTE }
       isCustomer
     >
       <Flex column>
-        <Cards
-          
+        <Cards          
           secondary>
           <ReviewContainer>
             <h5 style={ { color: '#0C61A5'} } ><b>Jai agarwal (Managing Director, JaiG )</b><br></br></h5>
@@ -35,11 +33,7 @@ const CustomerContainer = () => {
          
         </Cards>
 
-        <Cards
-          
-          secondary>
-          
-        
+        <Cards secondary>   
           <ReviewContainer>
           <h5 style={ { color: '#0C61A5' } } ><b>Bradley B.</b><br></br></h5>
             <p style={ { color: 'grey' } } ><i>"Excellent work - good communication - Understanding - Professional - Highly recommend!"</i></p>

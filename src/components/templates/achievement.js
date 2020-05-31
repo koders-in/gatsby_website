@@ -9,7 +9,6 @@ const AchievementContainer = () => {
   return ( <>
     <DefaultTemplate
       title={ HEADER.ACHIEVEMENT }
-      quote={ HEADER.QUOTE }
       secondary
     >
       <Cards
