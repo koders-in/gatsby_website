@@ -15,9 +15,9 @@ class FooterContainer extends React.Component {
             <div className="col-lg-4" style={{ lineHeight: '2' }}>
               <h2 className="footer-heading mb-4 text-white">Quick Links</h2>
               <ul className="list-unstyled" >
-                <li><a href="#" style={{ color: '#0C61A5' }}>About Us</a></li>
-                <li><a href="#" style={{ color: '#0C61A5' }}>Testimonials</a></li>
-                <li><a href="#" style={{ color: '#0C61A5' }}>Contact Us</a></li>
+                <li><a href="# " style={{ color: '#0C61A5' }}>About Us</a></li>
+                <li><a href="# " style={{ color: '#0C61A5' }}>Testimonials</a></li>
+                <li><a href="# " style={{ color: '#0C61A5' }}>Contact Us</a></li>
               </ul>
             </div>
             <div className="col-lg-8 ml-auto mt-5">

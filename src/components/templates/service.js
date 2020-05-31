@@ -1,11 +1,9 @@
 import React from "react";
-
 import { HEADER } from '../constants/header';
 import DefaultTemplate from '../organism/defaultTemplate';
-
 import { LaptopMacIcon, DomainIcon, PagesIcon } from '../constants/styledIcons';
-import { Header4, Paragraph } from '../atoms/header';
-import { RoundIconConatiner, ListContainerStyle, ListItem } from './service.style';
+import { Header4} from '../atoms/header';
+import { RoundIconConatiner, ListContainerStyle} from './service.style';
 
 import Cards from '../organism/cards';
 

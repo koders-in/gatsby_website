@@ -1,17 +1,6 @@
-import styled, { keyframes } from "styled-components";
-import Flex, { FlexItem } from 'styled-flex-component';
+import styled from "styled-components";
+import Flex from 'styled-flex-component';
 
-
-const rotate = keyframes``;
-// `
-//   from {
-//     transform: translateZ(0px) translateY(0%);
-//   }
-
-//   to {
-//     transform: translateZ(0px) translateY(-2.22222%);
-//   }
-// `;
 
 export const CardSContainer = styled( Flex ).attrs( ( props ) => ( {
   row: true

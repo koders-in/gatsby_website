@@ -2,14 +2,11 @@ import React from "react";
 
 import { HEADER } from '../constants/header';
 import DefaultTemplate from '../organism/defaultTemplate';
-import { BlogHeaderStyle, BlogContentStyle } from './blog.style';
+import { BlogContentStyle } from './blog.style';
 import blog1 from '../../images/blog-post-3.jpg';
 import { Link } from 'gatsby'
 import Cards from '../organism/cards';
-import Images from '../atoms/Images';
-import blogPage from "../../pages/blog-1.js";
-import {navigate} from 'gatsby'
-import { CovidBlog } from '../constants/blogLinks'
+
 
 const BlogContainer = () => {
   return (<>
@@ -22,7 +19,7 @@ const BlogContainer = () => {
     >
       <Cards
         header={
-          <img src={blog1} />
+          <img src={blog1} alt="Blog 1"/>
         }>
         <BlogContentStyle>
           <div style={{

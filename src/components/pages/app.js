@@ -5,14 +5,14 @@ import WorkContainer from '../templates/work';
 import ServiceContainer from '../templates/service';
 import AchievementContainer from '../templates/achievement';
 import BlogContainer from '../templates/blog';
-import CustomerContainer from '../templates/customer';
 import ContactUsContainer from '../templates/contactUs';
 import AboutContainer from '../templates/about';
 import NavContainer from '../templates/nav';
+import TestimonialComponent from '../templates/testimonial';
 
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
-
 import FooterContainer from '../organism/footer.js';
+
 class DashboardPage extends React.Component {
   
   render () {
@@ -32,7 +32,7 @@ class DashboardPage extends React.Component {
           <ServiceContainer />
           <WorkContainer />
           <AchievementContainer />
-         <CustomerContainer /> 
+         <TestimonialComponent /> 
           <BlogContainer />
           <ContactUsContainer/>
         </main>
