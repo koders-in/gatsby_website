@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import Flex, { FlexItem } from 'styled-flex-component';
-
 
 export const BlogHeaderStyle = styled.div`
 width: 100%;

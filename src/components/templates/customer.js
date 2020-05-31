@@ -4,8 +4,7 @@ import { HEADER } from '../constants/header';
 import DefaultTemplate from '../organism/defaultTemplate';
 import Cards from '../organism/cards';
 import Flex from 'styled-flex-component';
-import { ReviewContainer, ImageContainer } from './customer.style.js';
-import Images from '../atoms/Images';
+import { ReviewContainer } from './customer.style.js';
 
 const CustomerContainer = () => {
   return ( <>

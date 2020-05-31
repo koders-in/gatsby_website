@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Flex, { FlexItem } from 'styled-flex-component';
+
 
 export const CardHeaderStyle = styled.div`
   text-align: ${props => props.primary ? 'left' : 'center'};

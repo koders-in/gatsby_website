@@ -5,26 +5,24 @@ import WorkContainer from '../templates/work';
 import ServiceContainer from '../templates/service';
 import AchievementContainer from '../templates/achievement';
 import BlogContainer from '../templates/blog';
-import CustomerContainer from '../templates/customer';
 import ContactUsContainer from '../templates/contactUs';
 import AboutContainer from '../templates/about';
+import TestimonialComponent from '../templates/testimonial';
 import websiteIcon from '../../images/website-icon.png';
 import { RoundIconConatiner } from '../templates/service.style';
 import Image from '../atoms/Images';
-import {Link} from "gatsby"
-
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
-
 import FooterContainer from '../organism/footer.js';
+
 class DashboardPage extends React.Component {
   
   render () {
     return (
-      <>
+    <>
         <header>
           <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style={ { backgroundColor: '#070707' } }>
             <div className="mx-auto order-0">
-              <a className="navbar-brand mx-auto text-white" href="#">
+              <a className="navbar-brand mx-auto text-white" href="# ">
                 <RoundIconConatiner primary><Image src={ websiteIcon }
                 /></RoundIconConatiner>
               </a>
@@ -32,14 +30,13 @@ class DashboardPage extends React.Component {
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="#">Home</a>
+                  <a className="nav-link text-white" href="# ">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="">About</a>
+                <a className="nav-link text-white" href="# ">About Us</a>
                 </li>
                 <li className="nav-item">
-    <Link className="nav-link text-white" to={<ContactUsContainer/>} >Contact</Link>
-                 
+                <a className="nav-link text-white" href="# " >Contact</a>  
                 </li>
               </ul>
             </div>
@@ -58,7 +55,7 @@ class DashboardPage extends React.Component {
           <ServiceContainer />
           <WorkContainer />
           <AchievementContainer />
-         <CustomerContainer /> 
+         <TestimonialComponent /> 
           <BlogContainer />
           <ContactUsContainer/>
         </main>

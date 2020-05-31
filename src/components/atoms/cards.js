@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import Flex, { FlexItem } from 'styled-flex-component';
+import  { FlexItem } from 'styled-flex-component';
 
 
 

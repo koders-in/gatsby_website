@@ -1,10 +1,6 @@
 import React from 'react';
-import styled from "styled-components";
-import Flex, { FlexItem } from 'styled-flex-component';
-
 import CardItems from '../atoms/cards';
-
-import { CardHeaderStyle, CardContentStyle } from './cards.style';
+import { CardHeaderStyle} from './cards.style';
 
 
 

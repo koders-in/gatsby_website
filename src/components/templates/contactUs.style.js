@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Flex, { FlexItem } from 'styled-flex-component';
 
 export const FormContainerStyle = styled.div`
   text-align: left;
