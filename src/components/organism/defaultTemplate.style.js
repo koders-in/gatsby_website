@@ -23,13 +23,12 @@ export const ContainerContent = styled( Flex ).attrs( () => ( {
   row: true,
   justifyBetween: true,
 } ) )`;
-width: 100 %;
+width: 100%;
 height: auto;
-padding: 0 ${props => props.primary ? 0 : '4rem' };
 `;
 
 export const HeaderTextStyle = styled.div`
-width: 45%;
+width: 65%;
 margin-bottom: 3rem
 
 `;

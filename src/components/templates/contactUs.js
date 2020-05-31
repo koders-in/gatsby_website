@@ -7,15 +7,12 @@ import { LaptopMacIcon, DomainIcon, PagesIcon } from '../constants/styledIcons';
 import { Header4, Paragraph, } from '../atoms/header';
 import { FormContainerStyle, InputBox, TextArea, Button } from './contactUs.style';
 
-import Cards from '../organism/cards';
-
 
 const ContactUsContainer = () => {
   return ( <>
     <DefaultTemplate
-      title={ HEADER.CONTACTUS }
-      quote={ HEADER.QUOTE } >
-      <FormContainerStyle className="col-md-8">
+      title={ HEADER.CONTACTUS } isWork>
+      <FormContainerStyle className="col-md-9">
         <form action="#">
           <div className="row form-group">
             <div className="col-md-6 mb-3 mb-md-0">

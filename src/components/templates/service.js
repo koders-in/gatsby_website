@@ -13,8 +13,7 @@ import Cards from '../organism/cards';
 const ServiceContainer = () => {
   return ( <>
     <DefaultTemplate
-      title={ HEADER.SERVICE }
-      quote={ HEADER.QUOTE }>
+      title={ HEADER.SERVICE }>
       <Cards
         header={
           <RoundIconConatiner>

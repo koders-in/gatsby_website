@@ -19,8 +19,7 @@ export const CardSContainer = styled( Flex ).attrs( ( props ) => ( {
 width: 100%;
 justify-content: center;
 flex-direction: ${props => props.primary && 'column' };
-&:hover {
- }
+justify-content: space-evenly;
 `;
 
 export const WorkContentStyle = styled.div`
@@ -31,5 +30,4 @@ export const WorkContentStyle = styled.div`
   text-align: left;
   color: rgb(12, 97, 165);
   text-align: center;
-  width: 350px;
  `;
