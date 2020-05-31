@@ -29,7 +29,7 @@ function TestimonialCard(props) {
     if(props.isLeft) {
         return (
             <div style={{display: 'block',width:'100%'}}>
-                <Card style={{marginTop:'50px', paddingBottom: '50px'}}>
+                <Card style={{backgroundColor:'#A9A9A9',marginTop:'50px', paddingBottom: '50px'}}>
                     <CardActionArea>
                         <CardContent>
                             <FontAwesomeIcon icon={faQuoteLeft} style={{fontSize:"40px", marginLeft:"40%",marginBottom:"20px"}}/>
@@ -47,7 +47,7 @@ function TestimonialCard(props) {
     else {
         return (
             <div style={{display: 'block',width:'100%'}}>
-                <Card style={{marginTop:'50px', paddingBottom: '50px'}}>
+                <Card style={{backgroundColor:'#A9A9A9',marginTop:'50px', paddingBottom: '50px'}}>
                     <CardActionArea>
                         <CardContent>
                             <FontAwesomeIcon icon={faQuoteLeft} style={{fontSize:"40px", marginLeft:"40%",marginBottom:"20px"}}/>
