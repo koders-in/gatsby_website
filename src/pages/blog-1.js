@@ -3,7 +3,6 @@ import websiteIcon from '../images/website-icon.png';
 import { RoundIconConatiner } from '../components/templates/service.style';
 import Image from '../components/atoms/Images';
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../styles/blog.style';
-
 import FooterContainer from '../components/organism/footer.js';
 class BlogPage extends React.Component {
   render () {
@@ -35,8 +34,7 @@ In this time of self-isolation and social distancing, which hitherto is the only
 </p>
             </InnerContentContainer>
           </HeaderContainerText>
-        </HeaderContainer>
-        
+        </HeaderContainer>       
         <FooterContainer />
       </>
     );

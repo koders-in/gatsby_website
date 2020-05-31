@@ -5,9 +5,9 @@ import WorkContainer from '../templates/work';
 import ServiceContainer from '../templates/service';
 import AchievementContainer from '../templates/achievement';
 import BlogContainer from '../templates/blog';
-import CustomerContainer from '../templates/customer';
 import ContactUsContainer from '../templates/contactUs';
 import AboutContainer from '../templates/about';
+import TestimonialComponent from '../templates/testimonial';
 import websiteIcon from '../../images/website-icon.png';
 import { RoundIconConatiner } from '../templates/service.style';
 import Image from '../atoms/Images';
@@ -55,7 +55,7 @@ class DashboardPage extends React.Component {
           <ServiceContainer />
           <WorkContainer />
           <AchievementContainer />
-         <CustomerContainer /> 
+         <TestimonialComponent /> 
           <BlogContainer />
           <ContactUsContainer/>
         </main>
