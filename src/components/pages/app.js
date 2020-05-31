@@ -1,6 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
-
 import WorkContainer from '../templates/work';
 import ServiceContainer from '../templates/service';
 import AchievementContainer from '../templates/achievement';
@@ -42,8 +40,5 @@ class DashboardPage extends React.Component {
   }
 };
 
-DashboardPage.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default DashboardPage;

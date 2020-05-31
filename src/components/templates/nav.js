@@ -1,8 +1,6 @@
 import React ,{useState} from "react";
 
 import { RoundIconConatiner } from './service.style';
-import { NavStyle, LinkContainer } from './nav.style';
-import ContactUsContainer from './contactUs';
 import websiteIcon from '../../images/website-icon.png';
 import Image from '../atoms/Images';
 import { Link } from "gatsby"
@@ -19,7 +17,7 @@ const NavContainer = () => {
     return (
         <header>
             <nav className="navbar fixed-top navbar-expand-md" style={{ backgroundColor: '#070707' }}>
-                <a className="navbar-brand" href="#" style={{zIndex: '1'}}>
+                <a className="navbar-brand" href="# " style={{zIndex: '1'}}>
                     <RoundIconConatiner primary>
                         <Image src={websiteIcon} />
                     </RoundIconConatiner>
@@ -32,13 +30,13 @@ const NavContainer = () => {
                 <div className={`navbar-collapse ${isShow ? 'collapse show':'collapse'}`} id="collapsibleNavbar">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Home</a>
+                            <a className="nav-link text-white" href="# ">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="">About</a>
+                            <a className="nav-link text-white" href="# ">About</a>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white" to={<ContactUsContainer />} >Contact</Link>
+                            <Link className="nav-link text-white" to="# " >Contact</Link>
                         </li>
                     </ul>
                 </div>

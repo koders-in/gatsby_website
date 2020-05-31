@@ -20,7 +20,7 @@ const WorkContainer = () => {
     <DefaultTemplate
       title={HEADER.WORK}
       quote={HEADER.QUOTE}
-      primary
+      primary="true"
       isWork
     >
       <Carousel activeIndex={index} onSelect={handleSelect}

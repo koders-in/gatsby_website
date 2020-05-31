@@ -9,7 +9,7 @@ const AchievementContainer = () => {
   return ( <>
     <DefaultTemplate
       title={ HEADER.ACHIEVEMENT }
-      secondary
+      secondary="true"
     >
       <Cards
         header={

@@ -14,7 +14,7 @@ const BlogContainer = () => {
       title={HEADER.BLOG}
       quote={HEADER.QUOTE}
       style={{ padding: '0 5rem' }}
-      primary
+      primary="true"
       isBlog
     >
       <Cards

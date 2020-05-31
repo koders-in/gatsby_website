@@ -18,7 +18,7 @@ const ServiceContainer = () => {
             <LaptopMacIcon />
           </RoundIconConatiner>
         }
-        primary
+        primary="true"
       >
         <Header4>Development</Header4>
         <ListContainerStyle>

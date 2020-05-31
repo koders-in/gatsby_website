@@ -24,12 +24,12 @@ onChange(e) {
 
 onSubmit(e) {
     e.preventDefault();
-    let fname = this.state.fname;
+   /*let fname = this.state.fname;
     let lname = this.state.lname;
     let email = this.state.email;
     let contact = this.state.contact;
     let subject = this.state.subject;
-    let message = this.state.message;
+    let message = this.state.message;*/
 }
   render(){
   return ( <>
@@ -39,35 +39,35 @@ onSubmit(e) {
         <form action="#">
           <div className="row form-group">
             <div className="col-md-6 mb-3 mb-md-0">
-              <label htmlFor="first-name" className="text-white" for="fname">First Name</label>
+              <label htmlFor="first-name" className="text-white">First Name</label>
               <input aria-label="fname" type="text" id="fname" name="fname" onChange={this.onChange.bind(this)}  className="form-control" />
             </div>
             <div className="col-md-6">
-              <label htmlFor="last-name" className="text-white" for="lname">Last Name</label>
+              <label htmlFor="last-name" className="text-white">Last Name</label>
               <input aria-label="lname" type="text" id="lname" name="lname" onChange={this.onChange.bind(this)} className="form-control" />
             </div>
           </div>
           <div className="row form-group">
             <div className="col-md-12">
-              <label htmlFor="email" className="text-white" for="email">Email</label>
+              <label htmlFor="email" className="text-white">Email</label>
               <input aria-label="email" type="email" id="email" name="email" onChange={this.onChange.bind(this)}  className="form-control" />
             </div>
           </div>
           <div className="row form-group">
             <div className="col-md-12">
-              <label htmlFor="contact" className="text-white" for="contact">Contact</label>
+              <label htmlFor="contact" className="text-white">Contact</label>
               <input aria-label="contact" type="number" id="contact" name="contact" onChange={this.onChange.bind(this)}  className="form-control" />
             </div>
           </div>
           <div className="row form-group">
             <div className="col-md-12">
-              <label htmlFor="subject" className="text-white" for="subject">Subject</label>
+              <label htmlFor="subject" className="text-white">Subject</label>
               <input aria-label="subject" type="subject" id="subject" name="subject" onChange={this.onChange.bind(this)} className="form-control" />
             </div>
           </div>
           <div className="row form-group mb-5">
             <div className="col-md-12">
-              <label htmlFor="message" className="text-white" for="message">Message</label>
+              <label htmlFor="message" className="text-white">Message</label>
               <TextArea name="message" id="message" cols="30" rows="7" onChange={this.onChange.bind(this)}  className="form-control" placeholder="Write your notes or questions here..."></TextArea>
             </div>
           </div>
