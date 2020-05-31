@@ -1,8 +1,5 @@
 import styled from 'styled-components';
-// import media from 'styled-media-query';
 
-// const isLargeDevice = () => () =>
-//   media.greaterThan( 'medium' )`${ rule }`;
 export const StyledHeader1 = styled.h1`
   color: white;
 `;

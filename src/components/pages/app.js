@@ -6,7 +6,6 @@ import BlogContainer from '../templates/blog';
 import ContactUsContainer from '../templates/contactUs';
 import AboutContainer from '../templates/about';
 import NavContainer from '../templates/nav';
-import TestimonialComponent from '../templates/testimonial';
 
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
 import FooterContainer from '../organism/footer.js';
@@ -30,7 +29,6 @@ class DashboardPage extends React.Component {
           <ServiceContainer />
           <WorkContainer />
           <AchievementContainer />
-         <TestimonialComponent /> 
           <BlogContainer />
           <ContactUsContainer/>
         </main>

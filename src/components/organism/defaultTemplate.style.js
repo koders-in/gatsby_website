@@ -1,5 +1,11 @@
 import styled from "styled-components";
 import Flex from 'styled-flex-component';
+import media from 'styled-media-query';
+
+const setStyleForSmallDevice = () =>
+    media.lessThan('large')`
+    width: 100%;
+  `;
 
 
 export const DefaultContainerStyle = styled.div`
@@ -25,6 +31,8 @@ export const ContainerContent = styled( Flex ).attrs( () => ( {
 } ) )`;
 width: 100%;
 height: auto;
+flex-wrap: wrap;
+${setStyleForSmallDevice}
 `;
 
 export const HeaderTextStyle = styled.div`

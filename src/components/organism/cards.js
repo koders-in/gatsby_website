@@ -5,7 +5,7 @@ import { CardHeaderStyle} from './cards.style';
 
 
 
-const Cards = ( { children, header, primary, secondary, isWork } ) => {
+const Cards = ( { children, header, primary, secondary, isWork, isService } ) => {
 
   if ( secondary ) {
     return ( <CardItems primary={ primary } secondary={ secondary }>
@@ -15,7 +15,7 @@ const Cards = ( { children, header, primary, secondary, isWork } ) => {
   }
 
   return (
-    <CardItems primary={ primary }  >
+    <CardItems primary={ primary }  isService={isService}>
       <CardHeaderStyle primary={ primary } isWork={isWork}>
         { header }
       </CardHeaderStyle>
