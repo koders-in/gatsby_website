@@ -24,7 +24,7 @@ const AboutContainer = () => {
         </ImageContainer>
         <ImageContainer>
           <ImageView  src={IMAGE.professional} /> <br></br><br></br>
-          <span style={{ color: '#0C61A5' }}>We're Professional</span>
+          <span style={{ color: '#0C61A5' }}>We're Proficient</span>
           </ImageContainer>
         <ImageContainer>
           <ImageView  src={IMAGE.efficient} /><br></br><br></br>
