@@ -3,7 +3,7 @@ import React from "react";
 import { HEADER } from '../constants/header';
 import DefaultTemplate from '../organism/defaultTemplate';
 import { IMAGE } from '../constants/images';
-import { ImageContainer, ComponentContainer } from './about.style.js';
+import { ImageContainer, ComponentContainer, ImageView } from './about.style.js';
 
 
 
@@ -18,15 +18,16 @@ const AboutContainer = () => {
     >
       <ComponentContainer>
         <ImageContainer>
-          <img style={{ width: '320px' }} src={IMAGE.creativity} alt="creativity" /> <br></br><br></br>
-          <h4 style={{ color: '#0C61A5' }}>We're Creative</h4>
+          <ImageView  src={IMAGE.creativity} /><br></br><br></br>
+          <span style={{ color: '#0C61A5' }}>We're Creative</span>
         </ImageContainer>
-        <ImageContainer><img style={{ width: '150px' }} src={IMAGE.professional} alt="professional"/> <br></br><br></br>
-          <h4 style={{ color: '#0C61A5' }}>We're Professional</h4>
+        <ImageContainer>
+          <ImageView  src={IMAGE.professional} /> <br></br><br></br>
+          <span style={{ color: '#0C61A5' }}>We're Professional</span>
           </ImageContainer>
         <ImageContainer>
-          <img style={{ width: '150px' }} src={IMAGE.efficient} alt="efficient" /> <br></br><br></br>
-          <h4 style={{ color: '#0C61A5' }}>We're Efficient</h4>
+          <ImageView  src={IMAGE.efficient} /><br></br><br></br>
+          <span style={{ color: '#0C61A5' }}>We're Efficient</span>
           </ImageContainer>
      </ComponentContainer>
     </DefaultTemplate>

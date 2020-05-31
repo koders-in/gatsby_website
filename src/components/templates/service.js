@@ -18,7 +18,8 @@ const ServiceContainer = () => {
             <LaptopMacIcon />
           </RoundIconConatiner>
         }
-        primary="true"
+        primary
+        isService
       >
         <Header4>Development</Header4>
         <ListContainerStyle>
@@ -34,7 +35,8 @@ const ServiceContainer = () => {
             <DomainIcon />
           </RoundIconConatiner>
         }
-        primary>
+        primary
+        isService>
         <Header4>Design</Header4>
         <ListContainerStyle>
           <li>User Experience Design</li>
@@ -48,7 +50,8 @@ const ServiceContainer = () => {
             <PagesIcon />
           </RoundIconConatiner>
         }
-        primary>
+        primary
+        isService>
         <Header4>IT Solutions</Header4>
         <ListContainerStyle>
           <li>Customer Insights</li>

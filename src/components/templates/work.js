@@ -24,68 +24,55 @@ const WorkContainer = () => {
       isWork
     >
       <Carousel activeIndex={index} onSelect={handleSelect}
-        style={{ height: '380px', marginLeft: '-5rem' }}>
+        style={{ height: 'auto', marginLeft: '-5rem' }}>
         <Carousel.Item>
           <CardSContainer>
-            <Cards
-              header={
-                <Images src={IMAGE.UNITY} />
-              }
-              isWork>
-              <WorkContentStyle>
-                 A game made on unity about the life of a ball
-              </WorkContentStyle>
-            </Cards>
-            <Cards
-              header={
-                <Images src={IMAGE.PARKING} />
-              } isWork>
-              <WorkContentStyle>
-                 Tour Guide for shortest path
-              </WorkContentStyle>
-            </Cards>
+            <div class="card" style={{ width: '18rem',marginBottom:'1rem' }}>
+              <img class="card-img-top" src={IMAGE.UNITY} alt="Card image cap" />
+              <div class="card-body" style={{ textAlign: 'left' }}>
+                A game made on unity about the life of a ball
+              </div>
+            </div>
+            <div class="card" style={{ width: '18rem' }}>
+              <img class="card-img-top" src={IMAGE.PARKING} alt="Card image cap" />
+              <div class="card-body" style={{ textAlign: 'left' }}>
+                Tour Guide for shortest path
+              </div>
+            </div>
           </CardSContainer>
         </Carousel.Item>
 
         <Carousel.Item>
           <CardSContainer>
-            <Cards
-              header={
-                <Images src={IMAGE.RUSK} />
-              } isWork>
-              <WorkContentStyle>
-                 A website for product advertisement
-              </WorkContentStyle>
-            </Cards>
-            <Cards
-              header={
-                <Images src={IMAGE.POWERSHELL} />
-              } isWork>
-              <WorkContentStyle>
-                 Powershell script to collect csv data, group, create report and send mail
-              </WorkContentStyle>
-            </Cards>
+            <div class="card" style={{ width: '18rem' ,marginBottom:'1rem'}}>
+              <img class="card-img-top" src={IMAGE.RUSK} alt="Card image cap" />
+              <div class="card-body" style={{ textAlign: 'left' }}>
+                A website for product advertisement
+              </div>
+            </div>
+            <div class="card" style={{ width: '18rem' }}>
+              <img class="card-img-top" src={IMAGE.POWERSHELL} alt="Card image cap" />
+              <div class="card-body" style={{ textAlign: 'left' }}>
+                Powershell script to collect csv data, group, create report and send mail
+              </div>
+            </div>
           </CardSContainer>
         </Carousel.Item>
 
         <Carousel.Item>
           <CardSContainer>
-            <Cards
-              header={
-                <Images src={IMAGE.CLOUDISM} />
-              } isWork>
-              <WorkContentStyle>
-                Cloudsim scheduling using Ant Colony Optimization
-              </WorkContentStyle>
-            </Cards>
-            <Cards
-              header={
-                <Images src={IMAGE.FRAUD} />
-              } isWork>
-              <WorkContentStyle>
-                 Credit card fraud detection system
-              </WorkContentStyle>
-            </Cards>
+            <div class="card" style={{ width: '18rem',marginBottom:'1rem' }}>
+              <img class="card-img-top" src={IMAGE.CLOUDISM} alt="Card image cap" />
+              <div class="card-body" style={{ textAlign: 'left' }}>
+                A website for product advertisement
+              </div>
+            </div>
+            <div class="card" style={{ width: '18rem' }}>
+              <img class="card-img-top" src={IMAGE.FRAUD} alt="Card image cap" />
+              <div class="card-body" style={{ textAlign: 'left' }}>
+                Powershell script to collect csv data, group, create report and send mail
+              </div>
+            </div>
           </CardSContainer>
         </Carousel.Item>
 

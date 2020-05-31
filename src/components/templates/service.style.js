@@ -1,5 +1,11 @@
 import styled from "styled-components";
 import Flex, { FlexItem } from 'styled-flex-component';
+import media from 'styled-media-query';
+
+const setStyleForSmallDevice = () =>
+    media.lessThan('large')`
+    width: 0;
+  `;
 
 export const ServiceContainerStyle = styled( Flex ).attrs( () => ( {
   alignCenter: true,
@@ -38,6 +44,7 @@ export const RoundIconConatiner = styled.div`
   line-height: ${props => props.primary ? 'none' : '2.7' };
   text-align: center;
   object-fit: cover;
+  ${setStyleForSmallDevice}
 
 `;
 
