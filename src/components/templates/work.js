@@ -20,10 +20,10 @@ const WorkContainer = () => {
       isWork
     >
       <Carousel activeIndex={index} onSelect={handleSelect}
-        style={{ height: 'auto', marginLeft: '-5rem' }}>
+        style={{ height: 'auto', marginLeft: '-5rem'}}>
         <Carousel.Item>
           <CardSContainer>
-            <div class="card" style={{ width: '18rem',marginBottom:'1rem' }}>
+            <div class="card" style={{ width: '18rem'}}>
               <img class="card-img-top" src={IMAGE.UNITY} alt="Card" />
               <div class="card-body" style={{ textAlign: 'left' }}>
                 A game made on unity about the life of a ball
@@ -40,7 +40,7 @@ const WorkContainer = () => {
 
         <Carousel.Item>
           <CardSContainer>
-            <div class="card" style={{ width: '18rem' ,marginBottom:'1rem'}}>
+            <div class="card" style={{ width: '18rem'}}>
               <img class="card-img-top" src={IMAGE.RUSK} alt="Card" />
               <div class="card-body" style={{ textAlign: 'left' }}>
                 A website for product advertisement
@@ -57,7 +57,7 @@ const WorkContainer = () => {
 
         <Carousel.Item>
           <CardSContainer>
-            <div class="card" style={{ width: '18rem',marginBottom:'1rem' }}>
+            <div class="card" style={{ width: '18rem'}}>
               <img class="card-img-top" src={IMAGE.CLOUDISM} alt="Card" />
               <div class="card-body" style={{ textAlign: 'left' }}>
                 A website for product advertisement

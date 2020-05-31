@@ -8,6 +8,7 @@ import { ReviewContainer } from './customer.style.js';
 
 const CustomerContainer = () => {
   return ( <>
+  <div id="testimonials">
     <DefaultTemplate
       title={ HEADER.CUSTOMER }
       isCustomer
@@ -40,6 +41,7 @@ const CustomerContainer = () => {
         </Cards>
       </Flex>
     </DefaultTemplate>
+    </div>
   </>
   );
 };

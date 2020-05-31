@@ -1,7 +1,7 @@
 import React from "react";
 import { SiteLinks } from './footer.style';
 import { FacebookCircleIcon, InstagramIcon, TwitterIcon,LinkedinIcon,GithubIcon } from '../constants/styledIcons';
-
+import {Link} from 'react-scroll'
 class FooterContainer extends React.Component {
   render() {
     return (
@@ -14,9 +14,9 @@ class FooterContainer extends React.Component {
             <div className="col-lg-4" style={{ lineHeight: '2' }}>
               <h2 className="footer-heading mb-4 text-white">Quick Links</h2>
               <ul className="list-unstyled" >
-                <li><a href="# " style={{ color: '#0C61A5' }}>About Us</a></li>
-                <li><a href="# " style={{ color: '#0C61A5' }}>Testimonials</a></li>
-                <li><a href="# " style={{ color: '#0C61A5' }}>Contact Us</a></li>
+              <li><Link to="about" spy={true} smooth={true} offset={50} duration={500} style={{ color: '#0C61A5' }}>About</Link></li>
+              <li><Link to="testimonials" spy={true} smooth={true} offset={50} duration={500} style={{ color: '#0C61A5' }}>Testimonials</Link></li>
+                <li><Link to="contact" spy={true} smooth={true} offset={-500} duration={500} style={{ color: '#0C61A5' }}>Contact</Link></li>
               </ul>
             </div>
             <div className="col-lg-8 ml-auto mt-5">
