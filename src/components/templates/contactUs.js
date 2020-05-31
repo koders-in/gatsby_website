@@ -65,10 +65,10 @@ onSubmit(e) {
               <input aria-label="subject" type="subject" id="subject" name="subject" onChange={this.onChange.bind(this)} className="form-control" />
             </div>
           </div>
-          <div className="row form-group mb-5">
+          <div className="row form-group">
             <div className="col-md-12">
               <label htmlFor="message" className="text-white">Message</label>
-              <TextArea name="message" id="message" cols="30" rows="7" onChange={this.onChange.bind(this)}  className="form-control" placeholder="Write your notes or questions here..."></TextArea>
+              <input name="message" id="message" cols="30" rows="7" onChange={this.onChange.bind(this)}  className="form-control" placeholder="Write your notes or questions here..."/>
             </div>
           </div>
           <div className="row form-group">
