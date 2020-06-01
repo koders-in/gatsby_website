@@ -9,7 +9,6 @@ class ContactUsContainer extends React.Component{
     this.state = {
         fname: null,
         lname: null,
-        email:null,
         contact:null,
         subject:null,
         message:null
@@ -21,6 +20,12 @@ onChange(e) {
         [e.target.name]: e.target.value
     })
 }
+
+sendMail() {
+  var name = this.state.fname + " " + this.state.lname;
+  var message = this.state.message;
+  window.location.href = 'mailto:koders@outlook.in?subject=' + this.state.subject + '&body=' + message + "<br>" + name + "<br>" + this.state.contact;
+};
 
 onSubmit(e) {
     e.preventDefault();
@@ -37,7 +42,7 @@ onSubmit(e) {
     <DefaultTemplate
       title={ HEADER.CONTACTUS } isWork>
       <FormContainerStyle className="col-md-9">
-        <form action="post">
+        <form>
           <div className="row form-group">
             <div className="col-md-6 mb-3 mb-md-0">
               <label htmlFor="first-name" className="text-white">First Name</label>
@@ -46,12 +51,6 @@ onSubmit(e) {
             <div className="col-md-6">
               <label htmlFor="last-name" className="text-white">Last Name</label>
               <input aria-label="lname" type="text" id="lname" name="lname" onChange={this.onChange.bind(this)} className="form-control" />
-            </div>
-          </div>
-          <div className="row form-group">
-            <div className="col-md-12">
-              <label htmlFor="email" className="text-white">Email</label>
-              <input aria-label="email" type="email" id="email" name="email" onChange={this.onChange.bind(this)}  className="form-control" />
             </div>
           </div>
           <div className="row form-group">
@@ -74,7 +73,7 @@ onSubmit(e) {
           </div>
           <div className="row form-group">
             <div className="col-md-12">
-              <Button>Send Message</Button>
+              <Button type="submit" onClick={() => this.sendMail()}>Send Message</Button>
             </div>
           </div>
         </form>
