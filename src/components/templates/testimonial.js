@@ -35,7 +35,7 @@ function TestimonialCard(props) {
                             <FontAwesomeIcon icon={faQuoteLeft} style={{fontSize:"40px", marginLeft:"40%",marginBottom:"20px"}}/>
                             <br />
                             <div style={{textAlign:"center", fontFamily:"Arial, Helvetica, sans-serif"}}>
-                                <p><i>"Koders’s team was fully committed to delivering good quality work on time and also provided professional advice wherever you need help."</i></p>
+                                <p><i>"Koders’s team was fully committed to delivering good quality work on time and also provided professional advice wherever you need help. Thank you Koders"</i></p>
                                 <h6><b>DIT Student</b></h6>
                             </div>
                         </CardContent>

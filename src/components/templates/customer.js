@@ -18,7 +18,7 @@ const CustomerContainer = () => {
           secondary>
           <ReviewContainer>
             <h5 style={ { color: '#0C61A5'} } ><b>Jai agarwal (Managing Director, JaiG )</b><br></br></h5>
-            <p style={ { color: 'grey' } } ><i>"I am proud to be a part of a zealous team who always astonishes me with great results. I received exactly what we had planned together. Thank you, Koders."</i></p>
+            <p style={ { color: 'grey' } } ><i>"I am proud to be a part of a zealous team who always astonishes me with great results. I received exactly what we had planned together."</i></p>
           </ReviewContainer>
         </Cards>
 

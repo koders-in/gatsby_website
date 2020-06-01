@@ -14,7 +14,12 @@ export const AboutContentStyle = styled.div`
   text-align: left;
   width: 100%;
  `;
- export const ImageContainer= styled( FlexItem ).attrs( () => ( { } ) )`
+ export const ImageContainer= styled( FlexItem ).attrs( () => ( { 
+  alignCenter: true,
+  full: true,
+  row: true,
+  justifyBetween: true,
+} ) )`
   padding: 1rem;
   background-Color: #A9A9A9;
   height: 280px;
