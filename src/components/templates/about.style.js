@@ -4,6 +4,7 @@ import media from 'styled-media-query';
 
 const setTextForSmallDevice = () =>
   media.lessThan( 'medium' )`
+  
   `;
 
 export const AboutContentStyle = styled.div`
@@ -36,7 +37,9 @@ export const AboutContentStyle = styled.div`
  export const ComponentContainer = styled( Flex ).attrs( () => ( {
    row: true,
   } ) )`
- justify-content: space;
  margin: 0 30px;
+ justify-content: center !important;
+ display: flex;
+ ${setTextForSmallDevice}
  `;
 

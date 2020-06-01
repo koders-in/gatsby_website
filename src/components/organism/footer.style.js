@@ -4,6 +4,7 @@ import media from 'styled-media-query';
 const setLinkContainerForSmallDevice = () =>
     media.lessThan('large')`
     margin-top: -10rem !important;
+    flex-direction: column;
   `;
 
 export const SiteLinks = styled.div`
@@ -14,3 +15,4 @@ width: 100%;
 height: auto;
 padding: 2rem 5rem;
 `;
+

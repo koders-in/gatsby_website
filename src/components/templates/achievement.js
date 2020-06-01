@@ -13,20 +13,20 @@ const AchievementContainer = () => {
     >
       <Cards
         header={
-          <strong style={ { fontSize: '35px', color: '#0C61A5' } }>79</strong>
+          <strong style={ { fontSize: '35px', color: '#ffffff' } }>79</strong>
         }
       >
         <span>Happy Clients</span>
       </Cards>
       <Cards
         header={
-          <strong style={ { fontSize: '35px', color: '#0C61A5' } }>88</strong>
+          <strong style={ { fontSize: '35px', color: '#ffffff' } }>88</strong>
         } >
         <span>Projects Completed</span>
       </Cards>
       <Cards
         header={
-          <strong style={ { fontSize: '35px', color: '#0C61A5' } }>71</strong>
+          <strong style={ { fontSize: '35px', color: '#ffffff' } }>71</strong>
         } >
         <span>Cups of Coffee</span>
       </Cards>

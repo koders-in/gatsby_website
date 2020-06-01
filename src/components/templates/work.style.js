@@ -5,7 +5,7 @@ import media from 'styled-media-query';
 const setStyleForSmallDevice = () =>
     media.lessThan('large')`
     flex-direction: column;
-    margin-left:5rem;
+    margin-left:4rem;
     justify-content: center;
   `;
 
