@@ -45,7 +45,7 @@ onSubmit(e) {
           <div className="row form-group">
             <div className="col-md-12">
               <label htmlFor="first-name" className="text-white">Name</label>
-              <input aria-label="fname" type="text" id="fname" name="Name" onChange={this.onChange.bind(this)}  className="form-control" />
+              <input aria-label="fname" type="text" id="fname" name="fname" onChange={this.onChange.bind(this)}  className="form-control" />
             </div>
           </div>
           <div className="row form-group">
