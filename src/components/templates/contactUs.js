@@ -8,7 +8,6 @@ class ContactUsContainer extends React.Component{
     super(props);
     this.state = {
         fname: null,
-        lname: null,
         contact:null,
         subject:null,
         message:null
@@ -22,7 +21,7 @@ onChange(e) {
 }
 
 sendMail() {
-  var name = this.state.fname + " " + this.state.lname;
+  var name = this.state.fname;
   var message = this.state.message;
   window.location.href = 'mailto:koders@outlook.in?subject=' + this.state.subject + '&body=' + message + "<br>" + name + "<br>" + this.state.contact;
 };
@@ -44,13 +43,9 @@ onSubmit(e) {
       <FormContainerStyle className="col-md-9">
         <form>
           <div className="row form-group">
-            <div className="col-md-6 mb-3 mb-md-0">
+            <div className="col-md-12">
               <label htmlFor="first-name" className="text-white">First Name</label>
-              <input aria-label="fname" type="text" id="fname" name="fname" onChange={this.onChange.bind(this)}  className="form-control" />
-            </div>
-            <div className="col-md-6">
-              <label htmlFor="last-name" className="text-white">Last Name</label>
-              <input aria-label="lname" type="text" id="lname" name="lname" onChange={this.onChange.bind(this)} className="form-control" />
+              <input aria-label="fname" type="text" id="fname" name="Name" onChange={this.onChange.bind(this)}  className="form-control" />
             </div>
           </div>
           <div className="row form-group">
