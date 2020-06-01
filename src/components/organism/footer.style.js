@@ -3,10 +3,13 @@ import media from 'styled-media-query';
 
 const setLinkContainerForSmallDevice = () =>
     media.lessThan('large')`
-    margin-top: -10rem !important;
-    flex-direction: column;
+    margin-bottom:5rem;
   `;
-
+  const setContainerForSmallDevice = () =>
+  media.lessThan('large')`
+  margin-top: -10rem !important;
+  flex-direction: row;
+`;
 export const SiteLinks = styled.div`
     ${setLinkContainerForSmallDevice}`
 
@@ -14,5 +17,6 @@ export const FooterContainerStye = styled.div`
 width: 100%;
 height: auto;
 padding: 2rem 5rem;
+${setContainerForSmallDevice}
 `;
 

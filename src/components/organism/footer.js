@@ -1,5 +1,5 @@
 import React from "react";
-import { SiteLinks } from './footer.style';
+import { SiteLinks,FooterContainerStye } from './footer.style';
 import { FacebookCircleIcon, InstagramIcon, TwitterIcon,LinkedinIcon,GithubIcon } from '../constants/styledIcons';
 import {Link} from 'react-scroll'
 class FooterContainer extends React.Component {
@@ -9,6 +9,7 @@ class FooterContainer extends React.Component {
         backgroundColor: '#000000', padding: ' 8em 0',
         color: 'grey'
       }}>
+        <FooterContainerStye>
         <div className="container">
           <div className="row">
             <div className="col-lg-4" style={{ lineHeight: '2' }}>
@@ -45,7 +46,7 @@ class FooterContainer extends React.Component {
             </div>
           </div>
         </div>
-
+        </FooterContainerStye>
       </footer>
     );
   }

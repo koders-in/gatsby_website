@@ -1,10 +1,17 @@
 import styled from "styled-components";
+import media from 'styled-media-query';
+
+const setTextForSmallDevice = () =>
+  media.lessThan( 'medium' )`
+  
+  `;
 
 export const ReviewContainer = styled.div`
 text-align: ${props => props.primary ? 'right' : 'left' };
 height: 90px;
 width: 100%;
 padding-right:10px;
+${setTextForSmallDevice}
 `;
 
 /*export const ImageContainer= styled.div`
