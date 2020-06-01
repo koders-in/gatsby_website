@@ -4,11 +4,11 @@ import media from 'styled-media-query';
 const setLinkContainerForSmallDevice = () =>
     media.lessThan('large')`
     margin-bottom:5rem;
+    flex-direction: row;
   `;
   const setContainerForSmallDevice = () =>
   media.lessThan('large')`
   margin-top: -10rem !important;
-  flex-direction: row;
 `;
 export const SiteLinks = styled.div`
     ${setLinkContainerForSmallDevice}`
