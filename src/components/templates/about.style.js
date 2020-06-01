@@ -4,7 +4,6 @@ import media from 'styled-media-query';
 
 const setTextForSmallDevice = () =>
   media.lessThan( 'medium' )`
-  font-size: 1.3rem;
   `;
 
 export const AboutContentStyle = styled.div`
@@ -20,7 +19,7 @@ export const AboutContentStyle = styled.div`
   background-Color: #A9A9A9;
   height: 280px;
   border: solid;
-  width: 33.33%;
+  width: 100%;
   margin: 0 10px;
   ${setTextForSmallDevice}
  `;
