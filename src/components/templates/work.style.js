@@ -9,12 +9,12 @@ const setStyleForSmallDevice = () =>
   `;
 
 
-export const CardSContainer = styled( Flex ).attrs( ( props ) => ( {
+export const CardsContainer = styled( Flex ).attrs( ( props ) => ( {
   row: true
 } ) )`
 width: 100%;
 justify-content: center;
-flex-direction: ${props => props.primary && 'column' };
+flex-direction: ${props => 'column' && props.primary};
 justify-content: space-evenly;
 ${setStyleForSmallDevice}
 `;

@@ -14,9 +14,15 @@ class FooterContainer extends React.Component {
             <div className="col-lg-4" style={{ lineHeight: '2' }}>
               <h2 className="footer-heading mb-4 text-white">Quick Links</h2>
               <ul className="list-unstyled" >
-              <li><Link style={{cursor: 'pointer'}} to="about" spy={true} smooth={true} offset={50} duration={500} style={{ color: '#0C61A5' }}>About</Link></li>
-              <li><Link style={{cursor: 'pointer'}} to="testimonials" spy={true} smooth={true} offset={50} duration={500} style={{ color: '#0C61A5' }}>Testimonials</Link></li>
-                <li><Link style={{cursor: 'pointer'}} to="contact" spy={true} smooth={true} offset={-500} duration={500} style={{ color: '#0C61A5' }}>Contact</Link></li>
+              <li className="nav-item">
+                        <li className="nav-item">
+                        <Link style={{cursor: 'pointer'}} className="nav-link text-white" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
+                        </li>
+                        <Link style={{cursor: 'pointer'}} className="nav-link text-white" to="testimonials" spy={true} smooth={true} offset={50} duration={500}>Testimonials</Link>
+                        </li>
+                        <li className="nav-item">
+                        <Link style={{cursor: 'pointer'}} className="nav-link text-white" to="contact" spy={true} smooth={true} offset={-500} duration={500}>Contact</Link>
+                        </li>
               </ul>
             </div>
             <div className="col-lg-8 ml-auto mt-5">
