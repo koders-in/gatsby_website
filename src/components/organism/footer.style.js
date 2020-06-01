@@ -1,17 +1,16 @@
 import styled from "styled-components";
 import media from 'styled-media-query';
-import { FlexItem } from 'styled-flex-component';
 
 const setLinkContainerForSmallDevice = () =>
     media.lessThan('large')`
     margin-bottom:5rem;
-    flex-direction: row !important;
+    width:auto;
   `;
   const setContainerForSmallDevice = () =>
   media.lessThan('large')`
   margin-top: -10rem !important;
 `;
-export const SiteLinks = styled( FlexItem ).attrs( () => ( { } ) )`
+export const SiteLinks = styled.div`
     ${setLinkContainerForSmallDevice}`
 
 export const FooterContainerStye = styled.div`
