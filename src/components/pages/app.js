@@ -7,9 +7,9 @@ import ContactUsContainer from '../templates/contactUs';
 import AboutContainer from '../templates/about';
 import NavContainer from '../templates/nav';
 import CustomerConatiner from '../templates/customer';
-
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
 import FooterContainer from '../organism/footer.js';
+import { Helmet } from 'react-helmet';
 
 class DashboardPage extends React.Component {
   
@@ -17,6 +17,9 @@ class DashboardPage extends React.Component {
     return (
       <>
       <div id="home">
+      <Helmet>
+          <title>Koders</title>
+        </Helmet>
         <NavContainer/>
         <HeaderContainer>
           <HeaderContainerText data-sal="slide-up" data-sal-delay="500" data-sal-easing="linear">
@@ -27,6 +30,9 @@ class DashboardPage extends React.Component {
           </HeaderContainerText>
         </HeaderContainer>
         <main id="main">
+          <head>
+            <title>Koders</title>
+          </head>
           <AboutContainer/>
           <ServiceContainer />
           <WorkContainer />

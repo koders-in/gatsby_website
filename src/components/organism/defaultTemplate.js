@@ -6,9 +6,11 @@ import {
 } from './defaultTemplate.style';
 import { Header1, Header4, Paragraph } from '../atoms/header';
 
+
 const DefaultTemplate = ({ children, line, isWork, title, quote, primary, secondary, isCustomer, isBlog }) => {
   return (
-    <DefaultSection primary={primary} secondary={secondary}  >
+    <div>
+    <DefaultSection primary={primary} secondary={secondary} >
       <DefaultContainerStyle primary={primary || isCustomer} secondary={secondary} isBlog={isBlog} >
         <ContainerHeaderStyle >
           <HeaderTextStyle>
@@ -25,7 +27,8 @@ const DefaultTemplate = ({ children, line, isWork, title, quote, primary, second
             </ContainerContent>}
         </div>
       </DefaultContainerStyle>
-    </DefaultSection >);
+    </DefaultSection >
+    </div>);
 };
 
 export default DefaultTemplate;
