@@ -22,7 +22,6 @@ export const AboutContentStyle = styled.div`
   border: solid;
   width: 33.33%;
   margin: 0 10px;
-  font-size: 1.5rem;
   ${setTextForSmallDevice}
  `;
 

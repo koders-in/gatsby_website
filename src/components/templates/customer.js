@@ -26,7 +26,7 @@ const CustomerContainer = () => {
           header={
             <ReviewContainer primary>
               <h5 style={ { color: '#0C61A5'} } ><b>DIT Student</b><br></br></h5>
-            <p style={ { color: 'grey' } } ><i>"The Software was developed in an organized manner. There was a methodical documentation and explanation of the code. Their walk through video proved very instrumental in learning the architecture of the software. Koders always had a cordial and happy-to-help attitude even under pressure."</i></p>
+            <p style={ { color: 'grey' } } ><i>"Koders’s team was fully committed to delivering good quality work on time and also provided professional advice wherever you need help."</i></p>
             </ReviewContainer>
           }
           secondary >

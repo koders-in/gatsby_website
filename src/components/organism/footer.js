@@ -14,19 +14,19 @@ class FooterContainer extends React.Component {
             <div className="col-lg-4" style={{ lineHeight: '2' }}>
               <h2 className="footer-heading mb-4 text-white">Quick Links</h2>
               <ul className="list-unstyled" >
-              <li><Link to="about" spy={true} smooth={true} offset={50} duration={500} style={{ color: '#0C61A5' }}>About</Link></li>
-              <li><Link to="testimonials" spy={true} smooth={true} offset={50} duration={500} style={{ color: '#0C61A5' }}>Testimonials</Link></li>
-                <li><Link to="contact" spy={true} smooth={true} offset={-500} duration={500} style={{ color: '#0C61A5' }}>Contact</Link></li>
+              <li><Link style={{cursor: 'pointer'}} to="about" spy={true} smooth={true} offset={50} duration={500} style={{ color: '#0C61A5' }}>About</Link></li>
+              <li><Link style={{cursor: 'pointer'}} to="testimonials" spy={true} smooth={true} offset={50} duration={500} style={{ color: '#0C61A5' }}>Testimonials</Link></li>
+                <li><Link style={{cursor: 'pointer'}} to="contact" spy={true} smooth={true} offset={-500} duration={500} style={{ color: '#0C61A5' }}>Contact</Link></li>
               </ul>
             </div>
             <div className="col-lg-8 ml-auto mt-5">
               <div className="row">
                 <SiteLinks className="col-lg-10" style={{ textAlign: 'right' }}>
-                  <a aria-label="facebook" href="https://www.facebook.com/Koders-Organization-706497809743948/" style={{ paddingRight: '1.7rem' }}><FacebookCircleIcon /></a>
-                  <a aria-label="instagram" href="https://www.instagram.com/koders_in/" style={{ paddingRight: '1.7rem' }}><InstagramIcon /></a>
-                  <a aria-label="twitter" href="https://twitter.com/KodersHQ" style={{ paddingRight: '1.7rem' }}><TwitterIcon /></a>
-                  <a aria-label="linkedin" href="https://www.linkedin.com/in/koders-in-88575a1a0/" style={{ paddingRight: '1.7rem' }} ><LinkedinIcon /></a>
-                  <a aria-label="github" href="https://github.com/koders-in" ><GithubIcon /></a>
+                  <a aria-label="facebook" target="_blank" href="https://www.facebook.com/Koders-Organization-706497809743948/" style={{ paddingRight: '1.7rem' }}><FacebookCircleIcon /></a>
+                  <a aria-label="instagram" target="_blank" href="https://www.instagram.com/koders_in/" style={{ paddingRight: '1.7rem' }}><InstagramIcon /></a>
+                  <a aria-label="twitter" target="_blank" href="https://twitter.com/KodersHQ" style={{ paddingRight: '1.7rem' }}><TwitterIcon /></a>
+                  <a aria-label="linkedin" target="_blank" href="https://www.linkedin.com/in/koders-in-88575a1a0/" style={{ paddingRight: '1.7rem' }} ><LinkedinIcon /></a>
+                  <a aria-label="github" target="_blank" href="https://github.com/koders-in" ><GithubIcon /></a>
                 </SiteLinks>
               </div>
             </div>

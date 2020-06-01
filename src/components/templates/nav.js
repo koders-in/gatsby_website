@@ -30,13 +30,13 @@ const NavContainer = () => {
                 <div className={`navbar-collapse ${isShow ? 'collapse show':'collapse'}`} id="collapsibleNavbar">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                        <Link className="nav-link text-white" to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link>
+                        <Link style={{cursor: 'pointer'}} className="nav-link text-white" to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link text-white" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
+                        <Link style={{cursor: 'pointer'}} className="nav-link text-white" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link text-white" to="contact" spy={true} smooth={true} offset={-500} duration={500}>Contact</Link>
+                        <Link style={{cursor: 'pointer'}} className="nav-link text-white" to="contact" spy={true} smooth={true} offset={-500} duration={500}>Contact</Link>
                         </li>
                     </ul>
                     
