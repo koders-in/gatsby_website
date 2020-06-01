@@ -26,7 +26,7 @@ sendMail() {
   var name = this.state.fname + " " + this.state.lname;
   var email = this.state.email;
   var message = this.state.message;
-  window.location.href = 'mailto:koders@outlook.in?subject=' + this.state.subject + name + this.state.contact + ' (' + email + ')' + '&body=' + message;
+  window.location.href = 'mailto:koders@outlook.in?subject=' + this.state.subject + '&body=' + message + "\n" + name + this.state.contact;
 };
 
 onSubmit(e) {
