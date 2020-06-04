@@ -7,7 +7,6 @@ const setTextForSmallDevice = () =>
   `;
 
 export const ReviewContainer = styled.div`
-text-align: ${props => props.primary ? 'right' : 'left' };
 height: 90px;
 width: 100%;
 padding-right:10px;
