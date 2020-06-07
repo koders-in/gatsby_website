@@ -3,7 +3,7 @@ import media from 'styled-media-query';
 
 const setFormContainerForSmallDevice = () =>
   media.lessThan( 'large' )`
-    margin: 0 4rem;
+    margin: 0;
   `;
 
 

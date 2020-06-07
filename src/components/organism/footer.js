@@ -11,7 +11,7 @@ class FooterContainer extends React.Component {
       }}>
         <FooterContainerStye>
         <div className="container">
-          <div className="row">
+          <div className="row" style={{marginTop: '5rem'}}>
             <div className="col-lg-4" style={{ lineHeight: '2' }}>
               <h2 className="footer-heading mb-4 text-white">Quick Links</h2>
               <ul className="list-unstyled" >

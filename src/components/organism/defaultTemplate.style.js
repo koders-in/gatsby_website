@@ -7,7 +7,6 @@ const setStyleForSmallDevice = () =>
     width: 100%;
   `;
 
-
 export const DefaultContainerStyle = styled.div`
  padding:  5rem ${props => props.primary && !props.isBlog ? 0 : '5rem' };
  display: block;
@@ -37,7 +36,8 @@ ${setStyleForSmallDevice}
 
 export const HeaderTextStyle = styled.div`
 width: 65%;
-margin-bottom: 3rem
+margin-bottom: 3rem;
+${setStyleForSmallDevice}
 
 `;
 
