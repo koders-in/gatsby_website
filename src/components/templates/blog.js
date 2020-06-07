@@ -4,6 +4,8 @@ import { HEADER } from '../constants/header';
 import DefaultTemplate from '../organism/defaultTemplate';
 import blog1 from '../../images/blog-post-3.jpg';
 import { Link } from 'gatsby'
+import { BlogContainerStyle, BlogContainerItemStyle } from './blog.style';
+import blogImg1 from '../../images/blog-post-1.jpg';
 
 
 const BlogContainer = () => {
@@ -14,13 +16,22 @@ const BlogContainer = () => {
       primary="true"
       isBlog
     >
-      <div class="card" style={{width: '18rem'}}>
-        <img class="card-img-top" src={blog1} alt="Card" />
-        <div class="card-body" style={{textAlign: 'left'}}>
-          <span>May 24, 2020</span><br/>
-          <Link to='/blog-1'>Covid-19 and your forgotten quest to start a blog</Link>
-        </div>
-      </div>
+      <BlogContainerStyle>
+        <BlogContainerItemStyle className="card">
+          <img className="card-img-top" src={blog1} alt="Card" />
+          <div className="card-body" style={{ textAlign: 'left' }}>
+            <span>May 24, 2020</span><br />
+            <Link to='/Covid19'>{HEADER.BLOGTITLE}</Link>
+          </div>
+        </BlogContainerItemStyle>
+        <BlogContainerItemStyle className="card">
+          <img className="card-img-top" src={blogImg1} alt="Card" />
+          <div className="card-body" style={{ textAlign: 'left' }}>
+            <span>June 7, 2020</span><br />
+            <Link to='/development-tool'>{HEADER.DEVELOPMENT_TOOL}</Link>
+          </div>
+        </BlogContainerItemStyle>
+      </BlogContainerStyle>
     </DefaultTemplate>
   </>
   );
