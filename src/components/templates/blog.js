@@ -15,17 +15,11 @@ const BlogContainer = () => {
       style={{ padding: '0 5rem' }}
       primary="true"
       isBlog
+      isWork
     >
       <BlogContainerStyle>
         <BlogContainerItemStyle className="card">
           <img className="card-img-top" src={blog1} alt="Card" />
-          <div className="card-body" style={{ textAlign: 'left' }}>
-            <span>May 24, 2020</span><br />
-            <Link to='/Covid19'>{HEADER.BLOGTITLE}</Link>
-          </div>
-        </BlogContainerItemStyle>
-        <BlogContainerItemStyle className="card">
-          <img className="card-img-top" src={blogImg1} alt="Card" />
           <div className="card-body" style={{ textAlign: 'left' }}>
             <span>June 7, 2020</span><br />
             <Link to='/development-tool'>{HEADER.DEVELOPMENT_TOOL}</Link>

@@ -10,6 +10,7 @@ const setFormContainerForSmallDevice = () =>
 const setBlogContainerItemStyleSmallDevice = () =>
   media.lessThan( 'medium' )`
     width:100%;
+    margin: 0;
   `;
 
 export const BlogPragraph = styled.div`
@@ -28,10 +29,11 @@ export const BlogContainerStyle = styled( Flex ).attrs( () => ( {
 } ) )`
   justify-content: flex-start;
   flex-wrap: wrap;
+  width: 100%;
  `;
 
  export const BlogContainerItemStyle = styled.div`
- width: 33.33%;
+ width: 30%;
  margin: 1rem;
  ${setBlogContainerItemStyleSmallDevice}
  `;

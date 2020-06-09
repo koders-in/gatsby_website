@@ -12,7 +12,7 @@ import blogImg3 from '../images/blogImg3.png';
 const BlogPage = () => {
 
     return (<>
-        <NavContainer />
+        <NavContainer isBlogPage/>
         <DefaultTemplate
             title={HEADER.DEVELOPMENT_TOOL}
             isBlog
