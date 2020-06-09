@@ -5,6 +5,7 @@ import FooterContainer from '../components/organism/footer.js';
 import NavContainer from '../components/templates/nav';
 import { Paragraph, Header4 } from '../components/atoms/header';
 import { BlogPragraph, BlogSpan } from '../components/templates/blog.style';
+import Images from '../components/atoms/Images';
 import blogImg1 from '../images/blogImg1.jpg';
 import blogImg2 from '../images/blogImg2.jpg';
 import blogImg3 from '../images/blogImg3.png';
@@ -18,7 +19,7 @@ const BlogPage = () => {
             isBlog
         >
             <BlogPragraph>
-                <img src={blogImg1} alt="Card" />
+                <Images src={blogImg1} alt="Card" />
                 <Paragraph primary>
                     If you are reading this article, you are unsure about one of the most important decisions before making your first app. You are dying to start working on this marvelous idea for an app. Which one to do it for, iOS or Android?
                 </Paragraph>
@@ -52,7 +53,7 @@ const BlogPage = () => {
                     <br /> <BlogSpan> Winner: Flutter</BlogSpan>
                 </Paragraph>
                 <Header4>Performance and Appearance</Header4>
-                <img src={blogImg3} alt="Card" />
+                <Images src={blogImg3} alt="Card" />
                 <Paragraph primary>
                     The UI components in React are compiled to their native equivalents. The JS runs in a separate thread and connects to the native modules using a bridge. It is fast but is put in a tough spot when compared to Flutter.
                     Flutter fares better because of its Dart Frame which is faster than other frameworks because it is well connected to the native framework which makes making an app easier.
@@ -88,7 +89,7 @@ const BlogPage = () => {
                 </Paragraph>
 
                 <Header4>Installation</Header4>
-                <img src={blogImg2} alt="Card" />
+                <Images src={blogImg2} alt="Card" />
                 <Paragraph primary>
                     React native app development framework can be installed using Node Package Manager (NPM). Most developers that use JavaScript know how to use a <a href={LINK.NODEMANAGER} target="_blank" rel="noreferrer">Node package manager</a>.
                     Flutter is installed by downloading from Github, the binary for a specific platform. For macOS, we download <a href={LINK.ZIP} target="_blank" rel="noreferrer">flutter.zip</a> file and add this as a PATH variable.
