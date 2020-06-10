@@ -13,7 +13,7 @@ const CustomerContainer = () => {
       title={ HEADER.CUSTOMER }
       isCustomer
     >
-      <Flex column>
+      <Flex column style={{width:'100%'}}>
         <Cards          
           secondary>
           <ReviewContainer>
