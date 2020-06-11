@@ -25,6 +25,13 @@ const BlogContainer = () => {
             <Link to='/development-tool'>{HEADER.DEVELOPMENT_TOOL}</Link>
           </div>
         </BlogContainerItemStyle>
+        <BlogContainerItemStyle className="card">
+          <img className="card-img-top" src={blogImg1} alt="Card" />
+          <div className="card-body" style={{ textAlign: 'left' }}>
+            <span>June 11, 2020</span><br />
+            <Link to='/online-business'>{HEADER.ONLINE_BUSINESS}</Link>
+          </div>
+        </BlogContainerItemStyle>
       </BlogContainerStyle>
     </DefaultTemplate>
   </>
