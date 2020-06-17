@@ -15,7 +15,6 @@ const BlogPage = () => {
             title={HEADER.ONLINE_BUSINESS}
             isBlog>
             <BlogPragraph>
-
                 <Paragraph primary>
                     Hello Mighty Creator, I am sure you have a great idea about taking your business online. Maybe you don’t know where to start? But you need an online presence for your business to increase marketing and create a loyal customer base.
                 </Paragraph>
@@ -60,7 +59,7 @@ const BlogPage = () => {
                 </Paragraph>
             </BlogPragraph>
         </DefaultTemplate>
-        <FooterContainer />
+        <FooterContainer isBlogPage/>
     </>
     )
 };
