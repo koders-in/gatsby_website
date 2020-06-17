@@ -59,7 +59,7 @@ const BlogPage = () => {
                 </Paragraph>
             </BlogPragraph>
         </DefaultTemplate>
-        <FooterContainer />
+        <FooterContainer isBlogPage/>
     </>
     )
 };
