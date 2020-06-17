@@ -3,6 +3,9 @@ import { SiteLinks, FooterContainerStye } from './footer.style';
 import { FacebookCircleIcon, InstagramIcon, TwitterIcon, LinkedinIcon, GithubIcon } from '../constants/styledIcons';
 import { Link } from 'react-scroll'
 class FooterContainer extends React.Component {
+  constructor(props) {
+    super(props)
+  }
   render() {
     return (
       <footer primary="true" style={{
@@ -16,14 +19,14 @@ class FooterContainer extends React.Component {
                 <h2 className="footer-heading mb-4 text-white">Quick Links</h2>
                 <ul className="list-unstyled" >
                   <li className="nav-item">
-                      <Link style={{ cursor: 'pointer' }} onClick={() =>this.props.isBlogPage && window.history.back()}  className="nav-link text-white" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link style={{ cursor: 'pointer' }} onClick={() =>this.props.isBlogPage && window.history.back()} className="nav-link text-white" to="testimonials" spy={true} smooth={true} offset={50} duration={500}>Testimonials</Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link style={{ cursor: 'pointer' }} onClick={() =>this.props.isBlogPage && window.history.back()} className="nav-link text-white" to="contact" spy={true} smooth={true} offset={-500} duration={500}>Contact</Link>
-                    </li>
+                    <Link style={{ cursor: 'pointer' }} onClick={() => this.props.isBlogPage && window.history.back()} className="nav-link text-white" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link style={{ cursor: 'pointer' }} onClick={() => this.props.isBlogPage && window.history.back()} className="nav-link text-white" to="testimonials" spy={true} smooth={true} offset={50} duration={500}>Testimonials</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link style={{ cursor: 'pointer' }} onClick={() => this.props.isBlogPage && window.history.back()} className="nav-link text-white" to="contact" spy={true} smooth={true} offset={-500} duration={500}>Contact</Link>
+                  </li>
                 </ul>
               </div>
               <div className="col-lg-8 ml-auto mt-5">
