@@ -20,15 +20,15 @@ const AboutContainer = () => {
       <ComponentContainer>
         <ImageContainer>
           <ImageView  src={IMAGE.creativity} /><br></br><br></br>
-          <span style={{ color: '#0C61A5' }}>We're Creative</span>
+          <span style={{ color: '#0C61A5' }}>Creative</span>
         </ImageContainer>
         <ImageContainer>
           <ImageView  src={IMAGE.professional} /> <br></br><br></br>
-          <span style={{ color: '#0C61A5' }}>We're Proficient</span>
+          <span style={{ color: '#0C61A5' }}>Proficient</span>
           </ImageContainer>
         <ImageContainer>
           <ImageView  src={IMAGE.efficient} /><br></br><br></br>
-          <span style={{ color: '#0C61A5' }}>We're Efficient</span>
+          <span style={{ color: '#0C61A5' }}>Efficient</span>
           </ImageContainer>
      </ComponentContainer>
     </DefaultTemplate>

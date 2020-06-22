@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { RoundIconConatiner } from './service.style';
-import websiteIcon from '../../images/website-icon.png';
+import websiteIcon from '../../../static/website-icon.png';
 import Image from '../atoms/Images';
 import { NaviconIcon } from '../constants/styledIcons'
 import { Link } from "react-scroll";

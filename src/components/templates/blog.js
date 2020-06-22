@@ -6,7 +6,7 @@ import blog1 from '../../images/blog-post-3.jpg';
 import { Link } from 'gatsby'
 import { BlogContainerStyle, BlogContainerItemStyle } from './blog.style';
 import blogImg1 from '../../images/blog-post-1.jpg';
-
+import blogImg2 from '../../images/background3.jpeg';
 
 const BlogContainer = () => {
   return (<>
@@ -30,6 +30,13 @@ const BlogContainer = () => {
           <div className="card-body" style={{ textAlign: 'left' }}>
             <span>June 11, 2020</span><br />
             <Link to='/online-business'>{HEADER.ONLINE_BUSINESS}</Link>
+          </div>
+        </BlogContainerItemStyle>
+        <BlogContainerItemStyle className="card">
+          <img className="card-img-top" src={blogImg2} alt="Card" />
+          <div className="card-body" style={{ textAlign: 'left' }}>
+            <span>June 22, 2020</span><br />
+            <Link to='/software-development'>{HEADER.SOFTWARE_DEVELOPMENT}</Link>
           </div>
         </BlogContainerItemStyle>
       </BlogContainerStyle>
