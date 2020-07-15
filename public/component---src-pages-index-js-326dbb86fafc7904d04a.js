@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{RXBc:function(e,r,n){"use strict";n.r(r);var o=n("q1tI"),t=n.n(o),l=(n("q4sD"),n("vOnD")),a={color:{greyColor:"#1A1A1A",blackColor:"#070707",whiteColor:"white",lightGrey:"#DCDCDC",redColor:"#0C61A5"},size:{inner:"1260px"}},c=n("HMrp");r.default=function(){return t.a.createElement(l.a,{theme:a},t.a.createElement(c.a,null))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-326dbb86fafc7904d04a.js.map
