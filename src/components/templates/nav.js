@@ -22,6 +22,7 @@ const NavContainer = ({ isBlogPage }) => {
                         <Image src={websiteIcon} />
                     </RoundIconConatiner>
                 </a>
+                
                 <button onClick={() => handleDisplay()} className={`navbar-toggler ${isShow ? '' : 'collapsed'}`}
                     type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
                     aria-expanded={`${isShow ? true : false}`}>

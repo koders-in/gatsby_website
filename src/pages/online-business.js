@@ -4,8 +4,7 @@ import { HEADER, LINK } from '../components/constants/header';
 import FooterContainer from '../components/organism/footer.js';
 import NavContainer from '../components/templates/nav';
 import { Paragraph, Header4 } from '../components/atoms/header';
-import { BlogPragraph, BlogSpan } from '../components/templates/blog.style';
-import Images from '../components/atoms/Images';
+import { BlogPragraph } from '../components/templates/blog.style';
 
 const BlogPage = () => {
 

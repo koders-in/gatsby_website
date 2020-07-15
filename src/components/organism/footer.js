@@ -3,9 +3,6 @@ import { SiteLinks, FooterContainerStye } from './footer.style';
 import { FacebookCircleIcon, InstagramIcon, TwitterIcon, LinkedinIcon, GithubIcon } from '../constants/styledIcons';
 import { Link } from 'react-scroll'
 class FooterContainer extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     return (
       <footer primary="true" style={{
@@ -32,11 +29,11 @@ class FooterContainer extends React.Component {
               <div className="col-lg-8 ml-auto mt-5">
                 <div className="row">
                   <SiteLinks className="col-lg-10" style={{ textAlign: 'right' }}>
-                    <a aria-label="facebook" target="_blank" href="https://www.facebook.com/Koders-Organization-706497809743948/" style={{ paddingRight: '1.7rem' }}><FacebookCircleIcon /></a>
-                    <a aria-label="instagram" target="_blank" href="https://www.instagram.com/koders_in/" style={{ paddingRight: '1.7rem' }}><InstagramIcon /></a>
-                    <a aria-label="twitter" target="_blank" href="https://twitter.com/KodersHQ" style={{ paddingRight: '1.7rem' }}><TwitterIcon /></a>
-                    <a aria-label="linkedin" target="_blank" href="https://www.linkedin.com/in/koders-in-88575a1a0/" style={{ paddingRight: '1.7rem' }} ><LinkedinIcon /></a>
-                    <a aria-label="github" target="_blank" href="https://github.com/koders-in" ><GithubIcon /></a>
+                    <a aria-label="facebook" target="_blank" rel="noreferrer" href="https://www.facebook.com/Koders-Organization-706497809743948/" style={{ paddingRight: '1.7rem' }}><FacebookCircleIcon /></a>
+                    <a aria-label="instagram" target="_blank" rel="noreferrer" href="https://www.instagram.com/koders_in/" style={{ paddingRight: '1.7rem' }}><InstagramIcon /></a>
+                    <a aria-label="twitter" target="_blank" rel="noreferrer" href="https://twitter.com/KodersHQ" style={{ paddingRight: '1.7rem' }}><TwitterIcon /></a>
+                    <a aria-label="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/koders-in-88575a1a0/" style={{ paddingRight: '1.7rem' }} ><LinkedinIcon /></a>
+                    <a aria-label="github" target="_blank" rel="noreferrer" href="https://github.com/koders-in" ><GithubIcon /></a>
                   </SiteLinks>
                 </div>
               </div>

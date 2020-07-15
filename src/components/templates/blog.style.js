@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import media from 'styled-media-query';
-import Flex, { FlexItem } from 'styled-flex-component';
+import Flex from 'styled-flex-component';
 
 const setFormContainerForSmallDevice = () =>
   media.lessThan( 'medium' )`
