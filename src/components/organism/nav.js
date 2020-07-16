@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-
-import { RoundIconConatiner } from './service.style';
+import { RoundIconConatiner } from '../templates/service.style';
 import websiteIcon from '../../../static/website-icon.png';
 import Image from '../atoms/Images';
 import { NaviconIcon } from '../constants/styledIcons'
 import { Link } from "react-scroll";
 
 
-const NavContainer = ({ isBlogPage }) => {
-    const [isShow, showDropDown] = useState(false);
+const NavContainer = ({isBlogPage}) => {
+    const [isShow, showDropDown] = useState(true);
 
     const handleDisplay = () => {
         showDropDown(!isShow)
@@ -19,7 +18,7 @@ const NavContainer = ({ isBlogPage }) => {
             <nav className="navbar fixed-top navbar-expand-md" style={{ backgroundColor: '#070707' }}>
                 <a className="navbar-brand" href="# " style={{ zIndex: '1' }}>
                     <RoundIconConatiner primary>
-                        <Image src={websiteIcon} />
+                        <Image src={websiteIcon} height="50px" width="50px"/>
                     </RoundIconConatiner>
                 </a>
                 
@@ -30,9 +29,8 @@ const NavContainer = ({ isBlogPage }) => {
                 </button>
                 <div className={`navbar-collapse ${isShow ? 'collapse show' : 'collapse'}`} id="collapsibleNavbar">
                     <ul className="navbar-nav">
-                        {isBlogPage ?
+                    {isBlogPage ?
                             <li className="nav-item">
-                                <Link style={{ cursor: 'pointer' }} className="nav-link text-white" onClick={()=>window.history.back()}>Home</Link>
                             </li>
                             : <>
                                 <li className="nav-item">

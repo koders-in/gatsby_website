@@ -1,9 +1,7 @@
 import React from "react";
-
-import { HEADER } from '../constants/header';
 import DefaultTemplate from '../organism/defaultTemplate';
+import { HEADER } from '../constants/header';
 import blog1 from '../../images/blog-post-3.jpg';
-import { Link } from 'gatsby'
 import { BlogContainerStyle, BlogContainerItemStyle } from './blog.style';
 import blogImg1 from '../../images/blog-post-1.jpg';
 import blogImg2 from '../../images/background3.jpeg';
@@ -22,21 +20,22 @@ const BlogContainer = () => {
           <img className="card-img-top" src={blog1} alt="Card" />
           <div className="card-body" style={{ textAlign: 'left' }}>
             <span>June 7, 2020</span><br />
-            <Link to='/development-tool'>{HEADER.DEVELOPMENT_TOOL}</Link>
+            
+            <a href='/development-tool' target="_blank" rel="norefferer">{HEADER.DEVELOPMENT_TOOL}</a>
           </div>
         </BlogContainerItemStyle>
         <BlogContainerItemStyle className="card">
           <img className="card-img-top" src={blogImg1} alt="Card" />
           <div className="card-body" style={{ textAlign: 'left' }}>
             <span>June 11, 2020</span><br />
-            <Link to='/online-business'>{HEADER.ONLINE_BUSINESS}</Link>
+            <a href='/online-business' target="_blank" rel="norefferer">{HEADER.ONLINE_BUSINESS}</a>
           </div>
         </BlogContainerItemStyle>
         <BlogContainerItemStyle className="card">
           <img className="card-img-top" src={blogImg2} alt="Card" />
           <div className="card-body" style={{ textAlign: 'left' }}>
             <span>June 22, 2020</span><br />
-            <Link to='/software-development'>{HEADER.SOFTWARE_DEVELOPMENT}</Link>
+            <a href='/software-development' target="_blank" rel="norefferer">{HEADER.SOFTWARE_DEVELOPMENT}</a>
           </div>
         </BlogContainerItemStyle>
       </BlogContainerStyle>

@@ -18,3 +18,16 @@ export const LinkContainer = styled.div`
 export const NavStyle = styled.nav`
     ${setLinkContainerForSmallDevice}
     `;
+    export const RoundIconConatiner = styled.div`
+    border: ${props => props.primary ? 'none' : '1px solid white' };
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: ${props => props.primary ? 'none' : '2.7' };
+    text-align: center;
+    object-fit: cover;
+    ${setStyleForSmallDevice}
+
+  `;
+
+  

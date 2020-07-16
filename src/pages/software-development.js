@@ -2,7 +2,7 @@ import React from "react";
 import DefaultTemplate from "../components/organism/defaultTemplate";
 import { HEADER } from '../components/constants/header';
 import FooterContainer from '../components/organism/footer.js';
-import NavContainer from '../components/templates/nav';
+import NavContainer from '../components/organism/nav';
 import { Paragraph, Header4 } from '../components/atoms/header';
 import { BlogPragraph } from '../components/templates/blog.style';
 import Images from '../components/atoms/Images';

@@ -5,7 +5,7 @@ import AchievementContainer from '../templates/achievement';
 import BlogContainer from '../templates/blog';
 import ContactUsContainer from '../templates/contactUs';
 import AboutContainer from '../templates/about';
-import NavContainer from '../templates/nav';
+import NavContainer from '../organism/nav';
 import CustomerConatiner from '../templates/customer';
 import { HeaderContainer, HeaderContainerText , InnerContentContainer} from '../templates/dashboard.style';
 import FooterContainer from '../organism/footer.js';

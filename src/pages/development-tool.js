@@ -2,9 +2,9 @@ import React from "react";
 import DefaultTemplate from "../components/organism/defaultTemplate";
 import { HEADER, LINK } from '../components/constants/header';
 import FooterContainer from '../components/organism/footer.js';
-import NavContainer from '../components/templates/nav';
 import { Paragraph, Header4 } from '../components/atoms/header';
 import { BlogPragraph, BlogSpan } from '../components/templates/blog.style';
+import NavContainer from '../components/organism/nav';
 import Images from '../components/atoms/Images';
 import blogImg1 from '../images/blogImg1.jpg';
 import blogImg2 from '../images/blogImg2.jpg';
@@ -13,11 +13,13 @@ import blogImg3 from '../images/blogImg3.png';
 const BlogPage = () => {
 
     return (<>
-        <NavContainer isBlogPage/>
+        
         <DefaultTemplate
+            
             title={HEADER.DEVELOPMENT_TOOL}
             isBlog
         >
+            <NavContainer isBlogPage/>
             <BlogPragraph>
                 <Images src={blogImg1} alt="Card" />
                 <Paragraph primary>

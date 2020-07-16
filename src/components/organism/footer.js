@@ -1,29 +1,39 @@
-import React from "react";
+import React, { useState }  from "react";
 import { SiteLinks, FooterContainerStye } from './footer.style';
 import { FacebookCircleIcon, InstagramIcon, TwitterIcon, LinkedinIcon, GithubIcon } from '../constants/styledIcons';
 import { Link } from 'react-scroll'
-class FooterContainer extends React.Component {
-  render() {
+
+const FooterContainer = ({isBlogPage}) => {
+  const [isShow, showDropDown] = useState(true);
+
+  const handleDisplay = () => {
+      showDropDown(!isShow)
+  }
     return (
       <footer primary="true" style={{
-        backgroundColor: '#000000', padding: ' 8em 0',
+        backgroundColor: '#000000', padding: ' 4em 0',
         color: 'grey'
       }}>
         <FooterContainerStye>
           <div className="container">
-            <div className="row" style={{ marginTop: '5rem' }}>
+            <div className="row" style={{ marginTop: '1rem' }}>
               <div className="col-lg-4" style={{ lineHeight: '2' }}>
-                <h2 className="footer-heading mb-4 text-white">Quick Links</h2>
                 <ul className="list-unstyled" >
-                  <li className="nav-item">
-                    <Link style={{ cursor: 'pointer' }} onClick={() => this.props.isBlogPage && window.history.back()} className="nav-link text-white" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
+                {isBlogPage ?
+                            <li className="nav-item">
+                            </li>
+                            : <>
+                  <h2 className="footer-heading mb-4 text-white">Quick Links</h2>
+                  <li className="nav-item">  
+                    <Link style={{ cursor: 'pointer' }}  className="nav-link text-white" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link>
                   </li>
                   <li className="nav-item">
-                    <Link style={{ cursor: 'pointer' }} onClick={() => this.props.isBlogPage && window.history.back()} className="nav-link text-white" to="testimonials" spy={true} smooth={true} offset={50} duration={500}>Testimonials</Link>
+                    <Link style={{ cursor: 'pointer' }}  className="nav-link text-white" to="testimonials" spy={true} smooth={true} offset={50} duration={500}>Testimonials</Link>
                   </li>
                   <li className="nav-item">
-                    <Link style={{ cursor: 'pointer' }} onClick={() => this.props.isBlogPage && window.history.back()} className="nav-link text-white" to="contact" spy={true} smooth={true} offset={-500} duration={500}>Contact</Link>
+                    <Link style={{ cursor: 'pointer' }}  className="nav-link text-white" to="contact" spy={true} smooth={true} offset={-500} duration={500}>Contact</Link>
                   </li>
+                  </>}
                 </ul>
               </div>
               <div className="col-lg-8 ml-auto mt-5">
@@ -40,7 +50,7 @@ class FooterContainer extends React.Component {
             </div>
             <div className="row">
               <div className="col-md-12 text-center">
-                <p>
+                <p><br></br>
                   Copyright ©<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">document.write(new Date().getFullYear());</script>2020 All rights reserved
               </p>
               </div>
@@ -50,6 +60,6 @@ class FooterContainer extends React.Component {
       </footer>
     );
   }
-};
+
 
 export default FooterContainer;
