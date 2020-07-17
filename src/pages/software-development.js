@@ -4,9 +4,8 @@ import { HEADER } from '../components/constants/header';
 import FooterContainer from '../components/organism/footer.js';
 import NavContainer from '../components/organism/nav';
 import { Paragraph, Header4 } from '../components/atoms/header';
-import { BlogPragraph } from '../components/templates/blog.style';
-import Images from '../components/atoms/Images';
-import blogImg1 from '../images/blog3_1.jpg';
+//import { ImageContainer,ImageView } from '../components/templates/blog.style';
+//import blogImg1 from '../images/blog3_1.jpg';
 
 
 const BlogPage = () => {
@@ -17,9 +16,9 @@ const BlogPage = () => {
             title={HEADER.SOFTWARE_DEVELOPMENT}
             isBlog
         >
-            <BlogPragraph>
-                <Images src={blogImg1} alt="Card" />
-                <br></br><br></br>
+           
+          
+                <br></br>
                 <Paragraph primary>
                 Hi, Looking for advice to go online with a software development company? 
                 </Paragraph>
@@ -73,7 +72,7 @@ You also have to choose a hosting site which helps you create a website for your
                 <Paragraph primary>
                 We have gone through the various stages of starting a software development business online. These steps work with most businesses and will support your business completely. Follow these steps and see your business grow online. Share your doubts and concerns with us in the comments section below.
                 </Paragraph>
-            </BlogPragraph>
+        
         </DefaultTemplate>
         <FooterContainer isBlogPage/>
     </>

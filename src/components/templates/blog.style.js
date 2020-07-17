@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import media from 'styled-media-query';
-import Flex from 'styled-flex-component';
+import Flex, { FlexItem }  from 'styled-flex-component';
 
 const setFormContainerForSmallDevice = () =>
   media.lessThan( 'medium' )`
@@ -12,6 +12,29 @@ const setBlogContainerItemStyleSmallDevice = () =>
     width:100%;
     margin: 0;
   `;
+
+
+  const setTextForSmallDevice = () =>
+  media.lessThan( 'medium' )`
+  width:100%;
+  padding: 0 1em;
+  `;
+
+
+  export const ImageContainer= styled( FlexItem ).attrs( () => ( { 
+    alignCenter: true,
+    full: true,
+    row: true,
+    justifyBetween: true,
+  } ) )`
+    padding: 1rem;
+    width: 100%;
+    margin: 0 10px;
+    ${setTextForSmallDevice}
+   `;
+  export const ImageView = styled.img`
+  max-width: 100%;
+  max-height: 80%;`;
 
 export const BlogPragraph = styled.div`
     width: 100%;
